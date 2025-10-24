@@ -1,38 +1,38 @@
-species_id,name,classification,designation,average_height,skin_colors,hair_colors,eye_colors,average_lifespan,homeworld,language,people_id,url
-1,Human,mammal,sentient,180,"caucasian, black, asian, hispanic","blonde, brown, black, red","brown, blue, green, hazel, grey, amber",120,https://swapi.dev/api/planets/9/,Galactic Basic,"[66, 67, 68, 74]",https://swapi.dev/api/species/1/
-2,Droid,artificial,sentient,n/a,n/a,n/a,n/a,indefinite,,n/a,"[2, 3, 8, 23]",https://swapi.dev/api/species/2/
-3,Wookie,mammal,sentient,210,gray,"black, brown","blue, green, yellow, brown, golden, red",400,https://swapi.dev/api/planets/14/,Shyriiwook,"[13, 80]",https://swapi.dev/api/species/3/
-4,Rodian,sentient,reptilian,170,"green, blue",n/a,black,unknown,https://swapi.dev/api/planets/23/,Galatic Basic,[15],https://swapi.dev/api/species/4/
-5,Hutt,gastropod,sentient,300,"green, brown, tan",n/a,"yellow, red",1000,https://swapi.dev/api/planets/24/,Huttese,[16],https://swapi.dev/api/species/5/
-6,Yoda's species,mammal,sentient,66,"green, yellow","brown, white","brown, green, yellow",900,https://swapi.dev/api/planets/28/,Galactic basic,[20],https://swapi.dev/api/species/6/
-7,Trandoshan,reptile,sentient,200,"brown, green",none,"yellow, orange",unknown,https://swapi.dev/api/planets/29/,Dosh,[24],https://swapi.dev/api/species/7/
-8,Mon Calamari,amphibian,sentient,160,"red, blue, brown, magenta",none,yellow,unknown,https://swapi.dev/api/planets/31/,Mon Calamarian,[27],https://swapi.dev/api/species/8/
-9,Ewok,mammal,sentient,100,brown,"white, brown, black","orange, brown",unknown,https://swapi.dev/api/planets/7/,Ewokese,[30],https://swapi.dev/api/species/9/
-10,Sullustan,mammal,sentient,180,pale,none,black,unknown,https://swapi.dev/api/planets/33/,Sullutese,[31],https://swapi.dev/api/species/10/
-11,Neimodian,unknown,sentient,180,"grey, green",none,"red, pink",unknown,https://swapi.dev/api/planets/18/,Neimoidia,[33],https://swapi.dev/api/species/11/
-12,Gungan,amphibian,sentient,190,"brown, green",none,orange,unknown,https://swapi.dev/api/planets/8/,Gungan basic,"[36, 37, 38]",https://swapi.dev/api/species/12/
-13,Toydarian,mammal,sentient,120,"blue, green, grey",none,yellow,91,https://swapi.dev/api/planets/34/,Toydarian,[40],https://swapi.dev/api/species/13/
-14,Dug,mammal,sentient,100,"brown, purple, grey, red",none,"yellow, blue",unknown,https://swapi.dev/api/planets/35/,Dugese,[41],https://swapi.dev/api/species/14/
-15,Twi'lek,mammals,sentient,200,"orange, yellow, blue, green, pink, purple, tan",none,"blue, brown, orange, pink",unknown,https://swapi.dev/api/planets/37/,Twi'leki,"[45, 46]",https://swapi.dev/api/species/15/
-16,Aleena,reptile,sentient,80,"blue, gray",none,unknown,79,https://swapi.dev/api/planets/38/,Aleena,[47],https://swapi.dev/api/species/16/
-17,Vulptereen,unknown,sentient,100,grey,none,yellow,unknown,https://swapi.dev/api/planets/39/,vulpterish,[48],https://swapi.dev/api/species/17/
-18,Xexto,unknown,sentient,125,"grey, yellow, purple",none,black,unknown,https://swapi.dev/api/planets/40/,Xextese,[49],https://swapi.dev/api/species/18/
-19,Toong,unknown,sentient,200,"grey, green, yellow",none,orange,unknown,https://swapi.dev/api/planets/41/,Tundan,[50],https://swapi.dev/api/species/19/
-20,Cerean,mammal,sentient,200,pale pink,"red, blond, black, white",hazel,unknown,https://swapi.dev/api/planets/43/,Cerean,[52],https://swapi.dev/api/species/20/
-21,Nautolan,amphibian,sentient,180,"green, blue, brown, red",none,black,70,https://swapi.dev/api/planets/44/,Nautila,[53],https://swapi.dev/api/species/21/
-22,Zabrak,mammal,sentient,180,"pale, brown, red, orange, yellow",black,"brown, orange",unknown,https://swapi.dev/api/planets/45/,Zabraki,"[44, 54]",https://swapi.dev/api/species/22/
-23,Tholothian,mammal,sentient,unknown,dark,unknown,"blue, indigo",unknown,https://swapi.dev/api/planets/46/,unknown,[55],https://swapi.dev/api/species/23/
-24,Iktotchi,unknown,sentient,180,pink,none,orange,unknown,https://swapi.dev/api/planets/47/,Iktotchese,[56],https://swapi.dev/api/species/24/
-25,Quermian,mammal,sentient,240,white,none,yellow,86,https://swapi.dev/api/planets/48/,Quermian,[57],https://swapi.dev/api/species/25/
-26,Kel Dor,unknown,sentient,180,"peach, orange, red",none,"black, silver",70,https://swapi.dev/api/planets/49/,Kel Dor,[58],https://swapi.dev/api/species/26/
-27,Chagrian,amphibian,sentient,190,blue,none,blue,unknown,https://swapi.dev/api/planets/50/,Chagria,[59],https://swapi.dev/api/species/27/
-28,Geonosian,insectoid,sentient,178,"green, brown",none,"green, hazel",unknown,https://swapi.dev/api/planets/11/,Geonosian,[63],https://swapi.dev/api/species/28/
-29,Mirialan,mammal,sentient,180,"yellow, green","black, brown","blue, green, red, yellow, brown, orange",unknown,https://swapi.dev/api/planets/51/,Mirialan,"[64, 65]",https://swapi.dev/api/species/29/
-30,Clawdite,reptilian,sentient,180,"green, yellow",none,yellow,70,https://swapi.dev/api/planets/54/,Clawdite,[70],https://swapi.dev/api/species/30/
-31,Besalisk,amphibian,sentient,178,brown,none,yellow,75,https://swapi.dev/api/planets/55/,besalisk,[71],https://swapi.dev/api/species/31/
-32,Kaminoan,amphibian,sentient,220,"grey, blue",none,black,80,https://swapi.dev/api/planets/10/,Kaminoan,"[72, 73]",https://swapi.dev/api/species/32/
-33,Skakoan,mammal,sentient,unknown,"grey, green",none,unknown,unknown,https://swapi.dev/api/planets/56/,Skakoan,[76],https://swapi.dev/api/species/33/
-34,Muun,mammal,sentient,190,"grey, white",none,black,100,https://swapi.dev/api/planets/57/,Muun,[77],https://swapi.dev/api/species/34/
-35,Togruta,mammal,sentient,180,"red, white, orange, yellow, green, blue",none,"red, orange, yellow, green, blue, black",94,https://swapi.dev/api/planets/58/,Togruti,[78],https://swapi.dev/api/species/35/
-36,Kaleesh,reptile,sentient,170,"brown, orange, tan",none,yellow,80,https://swapi.dev/api/planets/59/,Kaleesh,[79],https://swapi.dev/api/species/36/
-37,Pau'an,mammal,sentient,190,grey,none,black,700,https://swapi.dev/api/planets/12/,Utapese,[83],https://swapi.dev/api/species/37/
+species_id,name,classification,designation,average_height,skin_colors,hair_colors,eye_colors,average_lifespan,homeworld,language,people_id
+1,Human,mammal,sentient,180,"caucasian, black, asian, hispanic","blonde, brown, black, red","brown, blue, green, hazel, grey, amber",120,https://swapi.dev/api/planets/9/,Galactic Basic,"[66, 67, 68, 74]"
+2,Droid,artificial,sentient,n/a,n/a,n/a,n/a,indefinite,,n/a,"[2, 3, 8, 23]"
+3,Wookie,mammal,sentient,210,gray,"black, brown","blue, green, yellow, brown, golden, red",400,https://swapi.dev/api/planets/14/,Shyriiwook,"[13, 80]"
+4,Rodian,sentient,reptilian,170,"green, blue",n/a,black,unknown,https://swapi.dev/api/planets/23/,Galatic Basic,[15]
+5,Hutt,gastropod,sentient,300,"green, brown, tan",n/a,"yellow, red",1000,https://swapi.dev/api/planets/24/,Huttese,[16]
+6,Yoda's species,mammal,sentient,66,"green, yellow","brown, white","brown, green, yellow",900,https://swapi.dev/api/planets/28/,Galactic basic,[20]
+7,Trandoshan,reptile,sentient,200,"brown, green",none,"yellow, orange",unknown,https://swapi.dev/api/planets/29/,Dosh,[24]
+8,Mon Calamari,amphibian,sentient,160,"red, blue, brown, magenta",none,yellow,unknown,https://swapi.dev/api/planets/31/,Mon Calamarian,[27]
+9,Ewok,mammal,sentient,100,brown,"white, brown, black","orange, brown",unknown,https://swapi.dev/api/planets/7/,Ewokese,[30]
+10,Sullustan,mammal,sentient,180,pale,none,black,unknown,https://swapi.dev/api/planets/33/,Sullutese,[31]
+11,Neimodian,unknown,sentient,180,"grey, green",none,"red, pink",unknown,https://swapi.dev/api/planets/18/,Neimoidia,[33]
+12,Gungan,amphibian,sentient,190,"brown, green",none,orange,unknown,https://swapi.dev/api/planets/8/,Gungan basic,"[36, 37, 38]"
+13,Toydarian,mammal,sentient,120,"blue, green, grey",none,yellow,91,https://swapi.dev/api/planets/34/,Toydarian,[40]
+14,Dug,mammal,sentient,100,"brown, purple, grey, red",none,"yellow, blue",unknown,https://swapi.dev/api/planets/35/,Dugese,[41]
+15,Twi'lek,mammals,sentient,200,"orange, yellow, blue, green, pink, purple, tan",none,"blue, brown, orange, pink",unknown,https://swapi.dev/api/planets/37/,Twi'leki,"[45, 46]"
+16,Aleena,reptile,sentient,80,"blue, gray",none,unknown,79,https://swapi.dev/api/planets/38/,Aleena,[47]
+17,Vulptereen,unknown,sentient,100,grey,none,yellow,unknown,https://swapi.dev/api/planets/39/,vulpterish,[48]
+18,Xexto,unknown,sentient,125,"grey, yellow, purple",none,black,unknown,https://swapi.dev/api/planets/40/,Xextese,[49]
+19,Toong,unknown,sentient,200,"grey, green, yellow",none,orange,unknown,https://swapi.dev/api/planets/41/,Tundan,[50]
+20,Cerean,mammal,sentient,200,pale pink,"red, blond, black, white",hazel,unknown,https://swapi.dev/api/planets/43/,Cerean,[52]
+21,Nautolan,amphibian,sentient,180,"green, blue, brown, red",none,black,70,https://swapi.dev/api/planets/44/,Nautila,[53]
+22,Zabrak,mammal,sentient,180,"pale, brown, red, orange, yellow",black,"brown, orange",unknown,https://swapi.dev/api/planets/45/,Zabraki,"[44, 54]"
+23,Tholothian,mammal,sentient,unknown,dark,unknown,"blue, indigo",unknown,https://swapi.dev/api/planets/46/,unknown,[55]
+24,Iktotchi,unknown,sentient,180,pink,none,orange,unknown,https://swapi.dev/api/planets/47/,Iktotchese,[56]
+25,Quermian,mammal,sentient,240,white,none,yellow,86,https://swapi.dev/api/planets/48/,Quermian,[57]
+26,Kel Dor,unknown,sentient,180,"peach, orange, red",none,"black, silver",70,https://swapi.dev/api/planets/49/,Kel Dor,[58]
+27,Chagrian,amphibian,sentient,190,blue,none,blue,unknown,https://swapi.dev/api/planets/50/,Chagria,[59]
+28,Geonosian,insectoid,sentient,178,"green, brown",none,"green, hazel",unknown,https://swapi.dev/api/planets/11/,Geonosian,[63]
+29,Mirialan,mammal,sentient,180,"yellow, green","black, brown","blue, green, red, yellow, brown, orange",unknown,https://swapi.dev/api/planets/51/,Mirialan,"[64, 65]"
+30,Clawdite,reptilian,sentient,180,"green, yellow",none,yellow,70,https://swapi.dev/api/planets/54/,Clawdite,[70]
+31,Besalisk,amphibian,sentient,178,brown,none,yellow,75,https://swapi.dev/api/planets/55/,besalisk,[71]
+32,Kaminoan,amphibian,sentient,220,"grey, blue",none,black,80,https://swapi.dev/api/planets/10/,Kaminoan,"[72, 73]"
+33,Skakoan,mammal,sentient,unknown,"grey, green",none,unknown,unknown,https://swapi.dev/api/planets/56/,Skakoan,[76]
+34,Muun,mammal,sentient,190,"grey, white",none,black,100,https://swapi.dev/api/planets/57/,Muun,[77]
+35,Togruta,mammal,sentient,180,"red, white, orange, yellow, green, blue",none,"red, orange, yellow, green, blue, black",94,https://swapi.dev/api/planets/58/,Togruti,[78]
+36,Kaleesh,reptile,sentient,170,"brown, orange, tan",none,yellow,80,https://swapi.dev/api/planets/59/,Kaleesh,[79]
+37,Pau'an,mammal,sentient,190,grey,none,black,700,https://swapi.dev/api/planets/12/,Utapese,[83]

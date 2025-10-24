@@ -1,4 +1,4 @@
-title,episode_id,opening_crawl,director,producer,release_date,characters_id,planets_id,species_id,url
+title,episode_id,opening_crawl,director,producer,release_date,characters_id,planets_id,species_id
 A New Hope,4,"It is a period of civil war.
 Rebel spaceships, striking
 from a hidden base, have won
@@ -19,7 +19,7 @@ Leia races home aboard her
 starship, custodian of the
 stolen plans that can save her
 people and restore
-freedom to the galaxy....",George Lucas,"Gary Kurtz, Rick McCallum",1977-05-25,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 18, 19, 81]","[1, 2, 3]",1,https://swapi.dev/api/films/1/
+freedom to the galaxy....",George Lucas,"Gary Kurtz, Rick McCallum",1977-05-25,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 18, 19, 81]","[1, 2, 3]",1
 The Empire Strikes Back,5,"It is a dark time for the
 Rebellion. Although the Death
 Star has been destroyed,
@@ -39,7 +39,7 @@ The evil lord Darth Vader,
 obsessed with finding young
 Skywalker, has dispatched
 thousands of remote probes into
-the far reaches of space....",Irvin Kershner,"Gary Kurtz, Rick McCallum",1980-05-17,"[1, 2, 3, 4, 5, 10, 13, 14, 18, 20, 21, 22, 23, 24, 25, 26]","[4, 5, 6, 27]",1,https://swapi.dev/api/films/2/
+the far reaches of space....",Irvin Kershner,"Gary Kurtz, Rick McCallum",1980-05-17,"[1, 2, 3, 4, 5, 10, 13, 14, 18, 20, 21, 22, 23, 24, 25, 26]","[4, 5, 6, 27]",1
 Return of the Jedi,6,"Luke Skywalker has returned to
 his home planet of Tatooine in
 an attempt to rescue his
@@ -58,7 +58,7 @@ When completed, this ultimate
 weapon will spell certain doom
 for the small band of rebels
 struggling to restore freedom
-to the galaxy...",Richard Marquand,"Howard G. Kazanjian, George Lucas, Rick McCallum",1983-05-25,"[1, 2, 3, 4, 5, 10, 13, 14, 16, 18, 20, 21, 22, 25, 27, 28, 29, 30, 31, 45]","[1, 5, 7, 8, 9]",1,https://swapi.dev/api/films/3/
+to the galaxy...",Richard Marquand,"Howard G. Kazanjian, George Lucas, Rick McCallum",1983-05-25,"[1, 2, 3, 4, 5, 10, 13, 14, 16, 18, 20, 21, 22, 25, 27, 28, 29, 30, 31, 45]","[1, 5, 7, 8, 9]",1
 The Phantom Menace,1,"Turmoil has engulfed the
 Galactic Republic. The taxation
 of trade routes to outlying star
@@ -78,7 +78,7 @@ the Supreme Chancellor has
 secretly dispatched two Jedi
 Knights, the guardians of
 peace and justice in the
-galaxy, to settle the conflict....",George Lucas,Rick McCallum,1999-05-19,"[2, 3, 10, 11, 16, 20, 21, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]","[1, 8, 9]",1,https://swapi.dev/api/films/4/
+galaxy, to settle the conflict....",George Lucas,Rick McCallum,1999-05-19,"[2, 3, 10, 11, 16, 20, 21, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]","[1, 8, 9]",1
 Attack of the Clones,2,"There is unrest in the Galactic
 Senate. Several thousand solar
 systems have declared their
@@ -97,7 +97,7 @@ to the Galactic Senate to vote
 on the critical issue of creating
 an ARMY OF THE REPUBLIC
 to assist the overwhelmed
-Jedi....",George Lucas,Rick McCallum,2002-05-16,"[2, 3, 6, 7, 10, 11, 20, 21, 22, 33, 35, 36, 40, 43, 46, 51, 52, 53, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 82]","[1, 8, 9, 10, 11]",1,https://swapi.dev/api/films/5/
+Jedi....",George Lucas,Rick McCallum,2002-05-16,"[2, 3, 6, 7, 10, 11, 20, 21, 22, 33, 35, 36, 40, 43, 46, 51, 52, 53, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 82]","[1, 8, 9, 10, 11]",1
 Revenge of the Sith,3,"War! The Republic is crumbling
 under attacks by the ruthless
 Sith Lord, Count Dooku.
@@ -116,4 +116,4 @@ attempts to flee the besieged
 capital with their valuable
 hostage, two Jedi Knights lead a
 desperate mission to rescue the
-captive Chancellor....",George Lucas,Rick McCallum,2005-05-19,"[1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 20, 21, 33, 35, 46, 51, 52, 53, 54, 55, 56, 58, 63, 64, 67, 68, 75, 78, 79, 80, 81, 82, 83]","[1, 2, 5, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]",1,https://swapi.dev/api/films/6/
+captive Chancellor....",George Lucas,Rick McCallum,2005-05-19,"[1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 20, 21, 33, 35, 46, 51, 52, 53, 54, 55, 56, 58, 63, 64, 67, 68, 75, 78, 79, 80, 81, 82, 83]","[1, 2, 5, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]",1
