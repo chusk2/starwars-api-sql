@@ -6,34 +6,6 @@ USE starwars_db;
 -- Main Entity Tables
 --
 
--- Table for Films
-CREATE TABLE IF NOT EXISTS films (
-    film_id INT PRIMARY KEY,
-    title VARCHAR(255),
-    episode_id INT,
-    opening_crawl TEXT,
-    director VARCHAR(255),
-    producer VARCHAR(255),
-    release_date DATE
-);
-
--- Table for People (Characters)
-CREATE TABLE IF NOT EXISTS people (
-    people_id INT PRIMARY KEY,
-    name VARCHAR(255),
-    height VARCHAR(10),
-    mass VARCHAR(10),
-    hair_color VARCHAR(50),
-    skin_color VARCHAR(50),
-    eye_color VARCHAR(50),
-    birth_year VARCHAR(20),
-    gender VARCHAR(20),
-    homeworld_id INT,
-    species_id INT,
-    FOREIGN KEY (homeworld_id) REFERENCES planets(planet_id),
-    FOREIGN KEY (species_id) REFERENCES species(species_id)
-);
-
 -- Table for Planets
 CREATE TABLE IF NOT EXISTS planets (
     planet_id INT PRIMARY KEY,
@@ -98,6 +70,33 @@ CREATE TABLE IF NOT EXISTS vehicles (
     vehicle_class VARCHAR(255)
 );
 
+-- Table for Films
+CREATE TABLE IF NOT EXISTS films (
+    film_id INT PRIMARY KEY,
+    title VARCHAR(255),
+    episode_id INT,
+    opening_crawl TEXT,
+    director VARCHAR(255),
+    producer VARCHAR(255),
+    release_date DATE
+);
+
+-- Table for People (Characters)
+CREATE TABLE IF NOT EXISTS people (
+    people_id INT PRIMARY KEY,
+    name VARCHAR(255),
+    height VARCHAR(10),
+    mass VARCHAR(10),
+    hair_color VARCHAR(50),
+    skin_color VARCHAR(50),
+    eye_color VARCHAR(50),
+    birth_year VARCHAR(20),
+    gender VARCHAR(20),
+    homeworld_id INT,
+    species_id INT,
+    FOREIGN KEY (homeworld_id) REFERENCES planets(planet_id),
+    FOREIGN KEY (species_id) REFERENCES species(species_id)
+);
 
 --
 -- Junction Tables for Many-to-Many Relationships
