@@ -170,20 +170,40 @@ for cat in categories:
 # ## Junction tables
 # (many-to-many relationships in the database)
 # 
-# 1. people_films: Links people to the films they appeared in.
+# 1. **films_people_junction**: Links films to the characters that appeared in them.
 # 
-#     - person_id: Foreign Key referencing the people table.
+#     - character_id: Foreign Key referencing the `people` table.
 #     - film_id: Foreign Key referencing the films table.
 # 
-# 2. people_vehicles: Links people to the vehicles they have piloted.
+# 2. **films_planets_junction**: Links films to the planets that appeared in them.
 # 
-#     - person_id: Foreign Key referencing the people table.
+#     - planet_id: Foreign Key referencing the `planets` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 3. **films_starships_junction**: Links films to the starships that appeared in them.
+# 
+#     - starship_id: Foreign Key referencing the `starships` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 4. **films_vehicles_junction**: Links films to the vehicles that appeared in them.
+# 
+#     - vehicle_id: Foreign Key referencing the `vehicles` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 5. **films_species_junction**: Links films to the species that appeared in them.
+# 
+#     - species_id: Foreign Key referencing the `species` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 6. **people_starships_junction**: Links people (pilots) to the starships they have piloted.
+# 
+#     - character_id: Foreign Key referencing the `people` table.
+#     - starship_id: Foreign Key referencing the `starships` table.
+# 
+# 7. **people_vehicles_junction**: Links people (pilots) to the vehicles they have piloted.
+# 
+#     - character_id: Foreign Key referencing the `people` table.
 #     - vehicle_id: Foreign Key referencing the vehicles table.
-# 
-# 3. people_starships: Links people to the starships they have piloted.
-# 
-#     - person_id: Foreign Key referencing the people table.
-#     - starship_id: Foreign Key referencing the starships table.
 
 # %%
 junction_tables = ['people_films', 'people_vehicles', 'people_starships']
@@ -212,5 +232,3 @@ people_starships_junction = data.explode('starships_id').drop(['films_id', 'vehi
 # df2 = pd.merge(df2, categories_dataframes['vehicles'], on='vehicles_id')
 # #df2.drop(['people_id', 'vehicles_id'], axis = 1)
 # df2.head()
-
-

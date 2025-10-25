@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS vehicles (
 CREATE TABLE IF NOT EXISTS films (
     film_id INT PRIMARY KEY,
     title VARCHAR(255),
-    episode_id INT,
+    episode INT,
     opening_crawl TEXT,
     director VARCHAR(255),
     producer VARCHAR(255),
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS films (
 
 -- Table for People (Characters)
 CREATE TABLE IF NOT EXISTS people (
-    people_id INT PRIMARY KEY,
+    character_id INT PRIMARY KEY,
     name VARCHAR(255),
     height VARCHAR(10),
     mass VARCHAR(10),
@@ -105,10 +105,10 @@ CREATE TABLE IF NOT EXISTS people (
 -- Films <-> People (Characters)
 CREATE TABLE IF NOT EXISTS films_people_junction (
     film_id INT,
-    people_id INT,
-    PRIMARY KEY (film_id, people_id),
+    character_id INT,
+    PRIMARY KEY (film_id, character_id),
     FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (people_id) REFERENCES people(people_id)
+    FOREIGN KEY (character_id) REFERENCES people(character_id)
 );
 
 -- Films <-> Planets
@@ -149,18 +149,18 @@ CREATE TABLE IF NOT EXISTS films_species_junction (
 
 -- People (Pilots) <-> Starships
 CREATE TABLE IF NOT EXISTS people_starships_junction (
-    people_id INT,
+    character_id INT,
     starship_id INT,
-    PRIMARY KEY (people_id, starship_id),
-    FOREIGN KEY (people_id) REFERENCES people(people_id),
+    PRIMARY KEY (character_id, starship_id),
+    FOREIGN KEY (character_id) REFERENCES people(character_id),
     FOREIGN KEY (starship_id) REFERENCES starships(starship_id)
 );
 
 -- People (Pilots) <-> Vehicles
 CREATE TABLE IF NOT EXISTS people_vehicles_junction (
-    people_id INT,
+    character_id INT,
     vehicle_id INT,
-    PRIMARY KEY (people_id, vehicle_id),
-    FOREIGN KEY (people_id) REFERENCES people(people_id),
+    PRIMARY KEY (character_id, vehicle_id),
+    FOREIGN KEY (character_id) REFERENCES people(character_id),
     FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id)
 );
