@@ -3075,7 +3075,7 @@
             "hair_colors": "blonde, brown, black, red",
             "eye_colors": "brown, blue, green, hazel, grey, amber",
             "average_lifespan": "120",
-            "homeworld": "https://swapi.dev/api/planets/9/",
+            "homeworld": 9,
             "language": "Galactic Basic",
             "people": [
                 66,
@@ -3102,7 +3102,7 @@
             "hair_colors": "n/a",
             "eye_colors": "n/a",
             "average_lifespan": "indefinite",
-            "homeworld": null,
+            "homeworld": [],
             "language": "n/a",
             "people": [
                 2,
@@ -3129,7 +3129,7 @@
             "hair_colors": "black, brown",
             "eye_colors": "blue, green, yellow, brown, golden, red",
             "average_lifespan": "400",
-            "homeworld": "https://swapi.dev/api/planets/14/",
+            "homeworld": 14,
             "language": "Shyriiwook",
             "people": [
                 13,
@@ -3152,7 +3152,7 @@
             "hair_colors": "n/a",
             "eye_colors": "black",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/23/",
+            "homeworld": 23,
             "language": "Galatic Basic",
             "people": [
                 15
@@ -3171,7 +3171,7 @@
             "hair_colors": "n/a",
             "eye_colors": "yellow, red",
             "average_lifespan": "1000",
-            "homeworld": "https://swapi.dev/api/planets/24/",
+            "homeworld": 24,
             "language": "Huttese",
             "people": [
                 16
@@ -3191,7 +3191,7 @@
             "hair_colors": "brown, white",
             "eye_colors": "brown, green, yellow",
             "average_lifespan": "900",
-            "homeworld": "https://swapi.dev/api/planets/28/",
+            "homeworld": 28,
             "language": "Galactic basic",
             "people": [
                 20
@@ -3214,7 +3214,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow, orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/29/",
+            "homeworld": 29,
             "language": "Dosh",
             "people": [
                 24
@@ -3233,7 +3233,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/31/",
+            "homeworld": 31,
             "language": "Mon Calamarian",
             "people": [
                 27
@@ -3252,7 +3252,7 @@
             "hair_colors": "white, brown, black",
             "eye_colors": "orange, brown",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/7/",
+            "homeworld": 7,
             "language": "Ewokese",
             "people": [
                 30
@@ -3271,7 +3271,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/33/",
+            "homeworld": 33,
             "language": "Sullutese",
             "people": [
                 31
@@ -3290,7 +3290,7 @@
             "hair_colors": "none",
             "eye_colors": "red, pink",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/18/",
+            "homeworld": 18,
             "language": "Neimoidia",
             "people": [
                 33
@@ -3309,7 +3309,7 @@
             "hair_colors": "none",
             "eye_colors": "orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/8/",
+            "homeworld": 8,
             "language": "Gungan basic",
             "people": [
                 36,
@@ -3331,7 +3331,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "91",
-            "homeworld": "https://swapi.dev/api/planets/34/",
+            "homeworld": 34,
             "language": "Toydarian",
             "people": [
                 40
@@ -3351,7 +3351,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow, blue",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/35/",
+            "homeworld": 35,
             "language": "Dugese",
             "people": [
                 41
@@ -3370,7 +3370,7 @@
             "hair_colors": "none",
             "eye_colors": "blue, brown, orange, pink",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/37/",
+            "homeworld": 37,
             "language": "Twi'leki",
             "people": [
                 45,
@@ -3393,7 +3393,7 @@
             "hair_colors": "none",
             "eye_colors": "unknown",
             "average_lifespan": "79",
-            "homeworld": "https://swapi.dev/api/planets/38/",
+            "homeworld": 38,
             "language": "Aleena",
             "people": [
                 47
@@ -3412,7 +3412,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/39/",
+            "homeworld": 39,
             "language": "vulpterish",
             "people": [
                 48
@@ -3431,7 +3431,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/40/",
+            "homeworld": 40,
             "language": "Xextese",
             "people": [
                 49
@@ -3450,7 +3450,7 @@
             "hair_colors": "none",
             "eye_colors": "orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/41/",
+            "homeworld": 41,
             "language": "Tundan",
             "people": [
                 50
@@ -3470,7 +3470,7 @@
             "hair_colors": "red, blond, black, white",
             "eye_colors": "hazel",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/43/",
+            "homeworld": 43,
             "language": "Cerean",
             "people": [
                 52
@@ -3490,7 +3490,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "70",
-            "homeworld": "https://swapi.dev/api/planets/44/",
+            "homeworld": 44,
             "language": "Nautila",
             "people": [
                 53
@@ -3509,7 +3509,7 @@
             "hair_colors": "black",
             "eye_colors": "brown, orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/45/",
+            "homeworld": 45,
             "language": "Zabraki",
             "people": [
                 44,
@@ -3529,7 +3529,7 @@
             "hair_colors": "unknown",
             "eye_colors": "blue, indigo",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/46/",
+            "homeworld": 46,
             "language": "unknown",
             "people": [
                 55
@@ -3549,7 +3549,7 @@
             "hair_colors": "none",
             "eye_colors": "orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/47/",
+            "homeworld": 47,
             "language": "Iktotchese",
             "people": [
                 56
@@ -3569,7 +3569,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "86",
-            "homeworld": "https://swapi.dev/api/planets/48/",
+            "homeworld": 48,
             "language": "Quermian",
             "people": [
                 57
@@ -3589,7 +3589,7 @@
             "hair_colors": "none",
             "eye_colors": "black, silver",
             "average_lifespan": "70",
-            "homeworld": "https://swapi.dev/api/planets/49/",
+            "homeworld": 49,
             "language": "Kel Dor",
             "people": [
                 58
@@ -3609,7 +3609,7 @@
             "hair_colors": "none",
             "eye_colors": "blue",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/50/",
+            "homeworld": 50,
             "language": "Chagria",
             "people": [
                 59
@@ -3629,7 +3629,7 @@
             "hair_colors": "none",
             "eye_colors": "green, hazel",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/11/",
+            "homeworld": 11,
             "language": "Geonosian",
             "people": [
                 63
@@ -3649,7 +3649,7 @@
             "hair_colors": "black, brown",
             "eye_colors": "blue, green, red, yellow, brown, orange",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/51/",
+            "homeworld": 51,
             "language": "Mirialan",
             "people": [
                 64,
@@ -3670,7 +3670,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "70",
-            "homeworld": "https://swapi.dev/api/planets/54/",
+            "homeworld": 54,
             "language": "Clawdite",
             "people": [
                 70
@@ -3690,7 +3690,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "75",
-            "homeworld": "https://swapi.dev/api/planets/55/",
+            "homeworld": 55,
             "language": "besalisk",
             "people": [
                 71
@@ -3709,7 +3709,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "80",
-            "homeworld": "https://swapi.dev/api/planets/10/",
+            "homeworld": 10,
             "language": "Kaminoan",
             "people": [
                 72,
@@ -3729,7 +3729,7 @@
             "hair_colors": "none",
             "eye_colors": "unknown",
             "average_lifespan": "unknown",
-            "homeworld": "https://swapi.dev/api/planets/56/",
+            "homeworld": 56,
             "language": "Skakoan",
             "people": [
                 76
@@ -3749,7 +3749,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "100",
-            "homeworld": "https://swapi.dev/api/planets/57/",
+            "homeworld": 57,
             "language": "Muun",
             "people": [
                 77
@@ -3769,7 +3769,7 @@
             "hair_colors": "none",
             "eye_colors": "red, orange, yellow, green, blue, black",
             "average_lifespan": "94",
-            "homeworld": "https://swapi.dev/api/planets/58/",
+            "homeworld": 58,
             "language": "Togruti",
             "people": [
                 78
@@ -3789,7 +3789,7 @@
             "hair_colors": "none",
             "eye_colors": "yellow",
             "average_lifespan": "80",
-            "homeworld": "https://swapi.dev/api/planets/59/",
+            "homeworld": 59,
             "language": "Kaleesh",
             "people": [
                 79
@@ -3808,7 +3808,7 @@
             "hair_colors": "none",
             "eye_colors": "black",
             "average_lifespan": "700",
-            "homeworld": "https://swapi.dev/api/planets/12/",
+            "homeworld": 12,
             "language": "Utapese",
             "people": [
                 83
