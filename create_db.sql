@@ -10,14 +10,14 @@ USE starwars_db;
 CREATE TABLE IF NOT EXISTS planets (
     planet_id INT PRIMARY KEY,
     name VARCHAR(255),
-    rotation_period VARCHAR(40),
-    orbital_period VARCHAR(40),
-    diameter VARCHAR(40),
+    rotation_period INT,
+    orbital_period INT,
+    diameter INT,
     climate VARCHAR(255),
     gravity VARCHAR(255),
     terrain VARCHAR(255),
-    surface_water VARCHAR(40),
-    population VARCHAR(40)
+    surface_water INT,
+    population_millions INT
 );
 
 -- Table for Species
@@ -26,11 +26,11 @@ CREATE TABLE IF NOT EXISTS species (
     name VARCHAR(255),
     classification VARCHAR(255),
     designation VARCHAR(255),
-    average_height VARCHAR(40),
+    average_height INT,
     skin_colors VARCHAR(255),
     hair_colors VARCHAR(255),
     eye_colors VARCHAR(255),
-    average_lifespan VARCHAR(40),
+    average_lifespan INT,
     homeworld_id INT,
     language VARCHAR(255),
     FOREIGN KEY (homeworld_id) REFERENCES planets(planet_id)
@@ -42,15 +42,15 @@ CREATE TABLE IF NOT EXISTS starships (
     name VARCHAR(255),
     model VARCHAR(255),
     manufacturer VARCHAR(255),
-    cost_in_credits VARCHAR(40),
-    length VARCHAR(40),
-    max_atmosphering_speed VARCHAR(40),
-    crew VARCHAR(40),
-    passengers VARCHAR(40),
-    cargo_capacity VARCHAR(40),
-    consumables VARCHAR(40),
-    hyperdrive_rating VARCHAR(40),
-    MGLT VARCHAR(40),
+    cost_in_credits BIGINT,
+    length FLOAT,
+    max_atmosphering_speed INT,
+    crew INT,
+    passengers INT,
+    cargo_capacity BIGINT,
+    consumables VARCHAR(150),
+    hyperdrive_rating INT,
+    MGLT INT,
     starship_class VARCHAR(255)
 );
 
@@ -60,13 +60,13 @@ CREATE TABLE IF NOT EXISTS vehicles (
     name VARCHAR(255),
     model VARCHAR(255),
     manufacturer VARCHAR(255),
-    cost_in_credits VARCHAR(40),
-    length VARCHAR(40),
-    max_atmosphering_speed VARCHAR(40),
-    crew VARCHAR(40),
-    passengers VARCHAR(40),
-    cargo_capacity VARCHAR(40),
-    consumables VARCHAR(40),
+    cost_in_credits INT,
+    length FLOAT,
+    max_atmosphering_speed INT,
+    crew INT,
+    passengers INT,
+    cargo_capacity INT,
+    consumables VARCHAR(150),
     vehicle_class VARCHAR(255)
 );
 
@@ -85,8 +85,8 @@ CREATE TABLE IF NOT EXISTS films (
 CREATE TABLE IF NOT EXISTS people (
     character_id INT PRIMARY KEY,
     name VARCHAR(255),
-    height VARCHAR(10),
-    mass VARCHAR(10),
+    height INT,
+    mass INT,
     hair_color VARCHAR(50),
     skin_color VARCHAR(50),
     eye_color VARCHAR(50),
