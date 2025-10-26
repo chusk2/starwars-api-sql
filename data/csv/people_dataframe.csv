@@ -1,0 +1,83 @@
+character_id,name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld_id,film_id,species_id,vehicle_id,starship_id,url
+1,Luke Skywalker,172.0,77.0,blond,fair,blue,19 BBY,male,1,"(1, 2, 3, 6)",1,"(14, 30)","(12, 22)",https://swapi.dev/api/people/1/
+2,C-3PO,167.0,75.0,,gold,yellow,112 BBY,n/a,1,"(1, 2, 3, 4, 5, 6)","(2,)",(),(),https://swapi.dev/api/people/2/
+3,R2-D2,96.0,32.0,,"white, blue",red,33 BBY,n/a,8,"(1, 2, 3, 4, 5, 6)","(2,)",(),(),https://swapi.dev/api/people/3/
+4,Darth Vader,202.0,136.0,none,white,yellow,41.9 BBY,male,1,"(1, 2, 3, 6)",1,(),"(13,)",https://swapi.dev/api/people/4/
+5,Leia Organa,150.0,49.0,brown,light,brown,19 BBY,female,2,"(1, 2, 3, 6)",1,"(30,)",(),https://swapi.dev/api/people/5/
+6,Owen Lars,178.0,120.0,"brown, grey",light,blue,52 BBY,male,1,"(1, 5, 6)",1,(),(),https://swapi.dev/api/people/6/
+7,Beru Whitesun lars,165.0,75.0,brown,light,blue,47 BBY,female,1,"(1, 5, 6)",1,(),(),https://swapi.dev/api/people/7/
+8,R5-D4,97.0,32.0,,"white, red",red,unknown,n/a,1,"(1,)","(2,)",(),(),https://swapi.dev/api/people/8/
+9,Biggs Darklighter,183.0,84.0,black,light,brown,24 BBY,male,1,"(1,)",1,(),"(12,)",https://swapi.dev/api/people/9/
+10,Obi-Wan Kenobi,182.0,77.0,"auburn, white",fair,blue-gray,57 BBY,male,20,"(1, 2, 3, 4, 5, 6)",1,"(38,)","(48, 59, 64, 65, 74)",https://swapi.dev/api/people/10/
+11,Anakin Skywalker,188.0,84.0,blond,fair,blue,41.9 BBY,male,1,"(4, 5, 6)",1,"(44, 46)","(39, 59, 65)",https://swapi.dev/api/people/11/
+12,Wilhuff Tarkin,180.0,,"auburn, grey",fair,blue,64 BBY,male,21,"(1, 6)",1,(),(),https://swapi.dev/api/people/12/
+13,Chewbacca,228.0,112.0,brown,unknown,blue,200 BBY,male,14,"(1, 2, 3, 6)","(3,)","(19,)","(10, 22)",https://swapi.dev/api/people/13/
+14,Han Solo,180.0,80.0,brown,fair,brown,29 BBY,male,22,"(1, 2, 3)",1,(),"(10, 22)",https://swapi.dev/api/people/14/
+15,Greedo,173.0,74.0,,green,black,44 BBY,male,23,"(1,)","(4,)",(),(),https://swapi.dev/api/people/15/
+16,Jabba Desilijic Tiure,175.0,1358.0,,"green-tan, brown",orange,600 BBY,hermaphrodite,24,"(1, 3, 4)","(5,)",(),(),https://swapi.dev/api/people/16/
+17,Wedge Antilles,170.0,77.0,brown,fair,hazel,21 BBY,male,22,"(1, 2, 3)",1,"(14,)","(12,)",https://swapi.dev/api/people/18/
+18,Jek Tono Porkins,180.0,110.0,brown,fair,blue,unknown,male,26,"(1,)",1,(),"(12,)",https://swapi.dev/api/people/19/
+19,Yoda,66.0,17.0,white,green,brown,896 BBY,male,28,"(2, 3, 4, 5, 6)","(6,)",(),(),https://swapi.dev/api/people/20/
+20,Palpatine,170.0,75.0,grey,pale,yellow,82 BBY,male,8,"(2, 3, 4, 5, 6)",1,(),(),https://swapi.dev/api/people/21/
+21,Boba Fett,183.0,78.2,black,fair,brown,31.5 BBY,male,10,"(2, 3, 5)",1,(),"(21,)",https://swapi.dev/api/people/22/
+22,IG-88,200.0,140.0,none,metal,red,15 BBY,none,28,"(2,)","(2,)",(),(),https://swapi.dev/api/people/23/
+23,Bossk,190.0,113.0,none,green,red,53 BBY,male,29,"(2,)","(7,)",(),(),https://swapi.dev/api/people/24/
+24,Lando Calrissian,177.0,79.0,black,dark,brown,31 BBY,male,30,"(2, 3)",1,(),"(10,)",https://swapi.dev/api/people/25/
+25,Lobot,175.0,79.0,none,light,blue,37 BBY,male,6,"(2,)",1,(),(),https://swapi.dev/api/people/26/
+26,Ackbar,180.0,83.0,none,brown mottle,orange,41 BBY,male,31,"(3,)","(8,)",(),(),https://swapi.dev/api/people/27/
+27,Mon Mothma,150.0,,auburn,fair,blue,48 BBY,female,32,"(3,)",1,(),(),https://swapi.dev/api/people/28/
+28,Arvel Crynyd,,,brown,fair,brown,unknown,male,28,"(3,)",1,(),"(28,)",https://swapi.dev/api/people/29/
+29,Wicket Systri Warrick,88.0,20.0,brown,brown,brown,8 BBY,male,7,"(3,)","(9,)",(),(),https://swapi.dev/api/people/30/
+30,Nien Nunb,160.0,68.0,none,grey,black,unknown,male,33,"(3,)","(10,)",(),"(10,)",https://swapi.dev/api/people/31/
+31,Qui-Gon Jinn,193.0,89.0,brown,fair,blue,92 BBY,male,28,"(4,)",1,"(38,)",(),https://swapi.dev/api/people/32/
+32,Nute Gunray,191.0,90.0,none,mottled green,red,unknown,male,18,"(4, 5, 6)","(11,)",(),(),https://swapi.dev/api/people/33/
+33,Finis Valorum,170.0,,blond,fair,blue,91 BBY,male,9,"(4,)",1,(),(),https://swapi.dev/api/people/34/
+34,Padmé Amidala,185.0,45.0,brown,light,brown,46 BBY,female,8,"(4, 5, 6)",1,(),"(39, 49, 64)",https://swapi.dev/api/people/35/
+35,Jar Jar Binks,196.0,66.0,none,orange,orange,52 BBY,male,8,"(4, 5)","(12,)",(),(),https://swapi.dev/api/people/36/
+36,Roos Tarpals,224.0,82.0,none,grey,orange,unknown,male,8,"(4,)","(12,)",(),(),https://swapi.dev/api/people/37/
+37,Rugor Nass,206.0,,none,green,orange,unknown,male,8,"(4,)","(12,)",(),(),https://swapi.dev/api/people/38/
+38,Ric Olié,183.0,,brown,fair,blue,unknown,male,8,"(4,)",1,(),"(40,)",https://swapi.dev/api/people/39/
+39,Watto,137.0,,black,"blue, grey",yellow,unknown,male,34,"(4, 5)","(13,)",(),(),https://swapi.dev/api/people/40/
+40,Sebulba,112.0,40.0,none,"grey, red",orange,unknown,male,35,"(4,)","(14,)",(),(),https://swapi.dev/api/people/41/
+41,Quarsh Panaka,183.0,,black,dark,brown,62 BBY,male,8,"(4,)",1,(),(),https://swapi.dev/api/people/42/
+42,Shmi Skywalker,163.0,,black,fair,brown,72 BBY,female,1,"(4, 5)",1,(),(),https://swapi.dev/api/people/43/
+43,Darth Maul,175.0,80.0,none,red,yellow,54 BBY,male,36,"(4,)","(22,)","(42,)","(41,)",https://swapi.dev/api/people/44/
+44,Bib Fortuna,180.0,,none,pale,pink,unknown,male,37,"(3,)","(15,)",(),(),https://swapi.dev/api/people/45/
+45,Ayla Secura,178.0,55.0,none,blue,hazel,48 BBY,female,37,"(4, 5, 6)","(15,)",(),(),https://swapi.dev/api/people/46/
+46,Ratts Tyerel,79.0,15.0,none,"grey, blue",unknown,unknown,male,38,"(4,)","(16,)",(),(),https://swapi.dev/api/people/47/
+47,Dud Bolt,94.0,45.0,none,"blue, grey",yellow,unknown,male,39,"(4,)","(17,)",(),(),https://swapi.dev/api/people/48/
+48,Gasgano,122.0,,none,"white, blue",black,unknown,male,40,"(4,)","(18,)",(),(),https://swapi.dev/api/people/49/
+49,Ben Quadinaros,163.0,65.0,none,"grey, green, yellow",orange,unknown,male,41,"(4,)","(19,)",(),(),https://swapi.dev/api/people/50/
+50,Mace Windu,188.0,84.0,none,dark,brown,72 BBY,male,42,"(4, 5, 6)",1,(),(),https://swapi.dev/api/people/51/
+51,Ki-Adi-Mundi,198.0,82.0,white,pale,yellow,92 BBY,male,43,"(4, 5, 6)","(20,)",(),(),https://swapi.dev/api/people/52/
+52,Kit Fisto,196.0,87.0,none,green,black,unknown,male,44,"(4, 5, 6)","(21,)",(),(),https://swapi.dev/api/people/53/
+53,Eeth Koth,171.0,,black,brown,brown,unknown,male,45,"(4, 6)","(22,)",(),(),https://swapi.dev/api/people/54/
+54,Adi Gallia,184.0,50.0,none,dark,blue,unknown,female,9,"(4, 6)","(23,)",(),(),https://swapi.dev/api/people/55/
+55,Saesee Tiin,188.0,,none,pale,orange,unknown,male,47,"(4, 6)","(24,)",(),(),https://swapi.dev/api/people/56/
+56,Yarael Poof,264.0,,none,white,yellow,unknown,male,48,"(4,)","(25,)",(),(),https://swapi.dev/api/people/57/
+57,Plo Koon,188.0,80.0,none,orange,black,22 BBY,male,49,"(4, 5, 6)","(26,)",(),"(48,)",https://swapi.dev/api/people/58/
+58,Mas Amedda,196.0,,none,blue,blue,unknown,male,50,"(4, 5)","(27,)",(),(),https://swapi.dev/api/people/59/
+59,Gregar Typho,185.0,85.0,black,dark,brown,unknown,male,8,"(5,)",1,(),"(39,)",https://swapi.dev/api/people/60/
+60,Cordé,157.0,,brown,light,brown,unknown,female,8,"(5,)",1,(),(),https://swapi.dev/api/people/61/
+61,Cliegg Lars,183.0,,brown,fair,blue,82 BBY,male,1,"(5,)",1,(),(),https://swapi.dev/api/people/62/
+62,Poggle the Lesser,183.0,80.0,none,green,yellow,unknown,male,11,"(5, 6)","(28,)",(),(),https://swapi.dev/api/people/63/
+63,Luminara Unduli,170.0,56.2,black,yellow,blue,58 BBY,female,51,"(5, 6)","(29,)",(),(),https://swapi.dev/api/people/64/
+64,Barriss Offee,166.0,50.0,black,yellow,blue,40 BBY,female,51,"(5,)","(29,)",(),(),https://swapi.dev/api/people/65/
+65,Dormé,165.0,,brown,light,brown,unknown,female,8,"(5,)","(1,)",(),(),https://swapi.dev/api/people/66/
+66,Dooku,193.0,80.0,white,fair,brown,102 BBY,male,52,"(5, 6)","(1,)","(55,)",(),https://swapi.dev/api/people/67/
+67,Bail Prestor Organa,191.0,,black,tan,brown,67 BBY,male,2,"(5, 6)","(1,)",(),(),https://swapi.dev/api/people/68/
+68,Jango Fett,183.0,79.0,black,tan,brown,66 BBY,male,53,"(5,)",1,(),(),https://swapi.dev/api/people/69/
+69,Zam Wesell,168.0,55.0,blonde,"fair, green, yellow",yellow,unknown,female,54,"(5,)","(30,)","(45,)",(),https://swapi.dev/api/people/70/
+70,Dexter Jettster,198.0,102.0,none,brown,yellow,unknown,male,55,"(5,)","(31,)",(),(),https://swapi.dev/api/people/71/
+71,Lama Su,229.0,88.0,none,grey,black,unknown,male,10,"(5,)","(32,)",(),(),https://swapi.dev/api/people/72/
+72,Taun We,213.0,,none,grey,black,unknown,female,10,"(5,)","(32,)",(),(),https://swapi.dev/api/people/73/
+73,Jocasta Nu,167.0,,white,fair,blue,unknown,female,9,"(5,)","(1,)",(),(),https://swapi.dev/api/people/74/
+74,R4-P17,96.0,,none,"silver, red","red, blue",unknown,female,28,"(5, 6)",1,(),(),https://swapi.dev/api/people/75/
+75,Wat Tambor,193.0,48.0,none,"green, grey",unknown,unknown,male,56,"(5,)","(33,)",(),(),https://swapi.dev/api/people/76/
+76,San Hill,191.0,,none,grey,gold,unknown,male,57,"(5,)","(34,)",(),(),https://swapi.dev/api/people/77/
+77,Shaak Ti,178.0,57.0,none,"red, blue, white",black,unknown,female,58,"(5, 6)","(35,)",(),(),https://swapi.dev/api/people/78/
+78,Grievous,216.0,159.0,none,"brown, white","green, yellow",unknown,male,59,"(6,)","(36,)","(60,)","(74,)",https://swapi.dev/api/people/79/
+79,Tarfful,234.0,136.0,brown,brown,blue,unknown,male,14,"(6,)","(3,)",(),(),https://swapi.dev/api/people/80/
+80,Raymus Antilles,188.0,79.0,brown,light,brown,unknown,male,2,"(1, 6)",1,(),(),https://swapi.dev/api/people/81/
+81,Sly Moore,178.0,48.0,none,pale,white,unknown,female,60,"(5, 6)",1,(),(),https://swapi.dev/api/people/82/
+82,Tion Medon,206.0,80.0,none,grey,black,unknown,male,12,"(6,)","(37,)",(),(),https://swapi.dev/api/people/83/
