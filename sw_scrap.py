@@ -89,6 +89,7 @@ def scrape_category(url):
 
 # %%
 if not os.path.exists('./data/starwars_raw.json'):
+    print('Scrapping all the categories from the API...')
     raw_dict = {cat : scrape_category(base_urls[cat]) for cat in categories}
     
     # store into a json file
