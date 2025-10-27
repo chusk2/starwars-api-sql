@@ -102,53 +102,8 @@ CREATE TABLE IF NOT EXISTS people (
 -- Junction Tables for Many-to-Many Relationships
 --
 
--- Films <-> People (Characters)
-CREATE TABLE IF NOT EXISTS films_people_junction (
-    film_id INT,
-    character_id INT,
-    PRIMARY KEY (film_id, character_id),
-    FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (character_id) REFERENCES people(character_id)
-);
-
--- Films <-> Planets
-CREATE TABLE IF NOT EXISTS films_planets_junction (
-    film_id INT,
-    planet_id INT,
-    PRIMARY KEY (film_id, planet_id),
-    FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (planet_id) REFERENCES planets(planet_id)
-);
-
--- Films <-> Starships
-CREATE TABLE IF NOT EXISTS films_starships_junction (
-    film_id INT,
-    starship_id INT,
-    PRIMARY KEY (film_id, starship_id),
-    FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (starship_id) REFERENCES starships(starship_id)
-);
-
--- Films <-> Vehicles
-CREATE TABLE IF NOT EXISTS films_vehicles_junction (
-    film_id INT,
-    vehicle_id INT,
-    PRIMARY KEY (film_id, vehicle_id),
-    FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id)
-);
-
--- Films <-> Species
-CREATE TABLE IF NOT EXISTS films_species_junction (
-    film_id INT,
-    species_id INT,
-    PRIMARY KEY (film_id, species_id),
-    FOREIGN KEY (film_id) REFERENCES films(film_id),
-    FOREIGN KEY (species_id) REFERENCES species(species_id)
-);
-
 -- People (Pilots) <-> Starships
-CREATE TABLE IF NOT EXISTS people_starships_junction (
+CREATE TABLE IF NOT EXISTS people_starships (
     character_id INT,
     starship_id INT,
     PRIMARY KEY (character_id, starship_id),
@@ -157,10 +112,57 @@ CREATE TABLE IF NOT EXISTS people_starships_junction (
 );
 
 -- People (Pilots) <-> Vehicles
-CREATE TABLE IF NOT EXISTS people_vehicles_junction (
+CREATE TABLE IF NOT EXISTS people_vehicles (
     character_id INT,
     vehicle_id INT,
     PRIMARY KEY (character_id, vehicle_id),
     FOREIGN KEY (character_id) REFERENCES people(character_id),
     FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id)
 );
+
+-- Films <-> People (Characters)
+CREATE TABLE IF NOT EXISTS films_people (
+    film_id INT,
+    character_id INT,
+    PRIMARY KEY (film_id, character_id),
+    FOREIGN KEY (film_id) REFERENCES films(film_id),
+    FOREIGN KEY (character_id) REFERENCES people(character_id)
+);
+
+-- Films <-> Planets
+CREATE TABLE IF NOT EXISTS films_planets (
+    film_id INT,
+    planet_id INT,
+    PRIMARY KEY (film_id, planet_id),
+    FOREIGN KEY (film_id) REFERENCES films(film_id),
+    FOREIGN KEY (planet_id) REFERENCES planets(planet_id)
+);
+
+-- Films <-> Starships
+CREATE TABLE IF NOT EXISTS films_starships (
+    film_id INT,
+    starship_id INT,
+    PRIMARY KEY (film_id, starship_id),
+    FOREIGN KEY (film_id) REFERENCES films(film_id),
+    FOREIGN KEY (starship_id) REFERENCES starships(starship_id)
+);
+
+-- Films <-> Vehicles
+CREATE TABLE IF NOT EXISTS films_vehicles (
+    film_id INT,
+    vehicle_id INT,
+    PRIMARY KEY (film_id, vehicle_id),
+    FOREIGN KEY (film_id) REFERENCES films(film_id),
+    FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id)
+);
+
+-- Films <-> Species
+CREATE TABLE IF NOT EXISTS films_species (
+    film_id INT,
+    species_id INT,
+    PRIMARY KEY (film_id, species_id),
+    FOREIGN KEY (film_id) REFERENCES films(film_id),
+    FOREIGN KEY (species_id) REFERENCES species(species_id)
+);
+
+
