@@ -1,6 +1,6 @@
 -- Create the database if it doesn't exist and then select it for use.
-CREATE DATABASE IF NOT EXISTS starwars_db;
-USE starwars_db;
+CREATE DATABASE IF NOT EXISTS starwars ;
+USE starwars ;
 
 --
 -- Main Entity Tables
