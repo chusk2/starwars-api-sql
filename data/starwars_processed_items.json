@@ -48,15 +48,9 @@
                 7,
                 8
             ],
-            "species": [
-                1,
-                2,
-                3,
-                4,
-                5
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/1/",
-            "id": "1"
+            "id": 1
         },
         {
             "title": "The Empire Strikes Back",
@@ -108,15 +102,9 @@
                 19,
                 20
             ],
-            "species": [
-                1,
-                2,
-                3,
-                6,
-                7
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/2/",
-            "id": "2"
+            "id": 2
         },
         {
             "title": "Return of the Jedi",
@@ -178,19 +166,9 @@
                 26,
                 30
             ],
-            "species": [
-                1,
-                2,
-                3,
-                5,
-                6,
-                8,
-                9,
-                10,
-                15
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/3/",
-            "id": "3"
+            "id": 3
         },
         {
             "title": "The Phantom Menace",
@@ -256,30 +234,9 @@
                 38,
                 42
             ],
-            "species": [
-                1,
-                2,
-                6,
-                11,
-                12,
-                13,
-                14,
-                15,
-                16,
-                17,
-                18,
-                19,
-                20,
-                21,
-                22,
-                23,
-                24,
-                25,
-                26,
-                27
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/4/",
-            "id": "4"
+            "id": 4
         },
         {
             "title": "Attack of the Clones",
@@ -361,24 +318,9 @@
                 56,
                 57
             ],
-            "species": [
-                1,
-                2,
-                6,
-                12,
-                13,
-                15,
-                28,
-                29,
-                30,
-                31,
-                32,
-                33,
-                34,
-                35
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/5/",
-            "id": "5"
+            "id": 5
         },
         {
             "title": "Revenge of the Sith",
@@ -467,30 +409,9 @@
                 73,
                 76
             ],
-            "species": [
-                1,
-                2,
-                3,
-                6,
-                15,
-                19,
-                20,
-                23,
-                24,
-                25,
-                26,
-                27,
-                28,
-                29,
-                30,
-                33,
-                34,
-                35,
-                36,
-                37
-            ],
+            "species": 1,
             "url": "https://swapi.dev/api/films/6/",
-            "id": "6"
+            "id": 6
         }
     ],
     "people": [
@@ -520,7 +441,7 @@
                 22
             ],
             "url": "https://swapi.dev/api/people/1/",
-            "id": "1"
+            "id": 1
         },
         {
             "name": "C-3PO",
@@ -540,13 +461,11 @@
                 5,
                 6
             ],
-            "species": [
-                2
-            ],
+            "species": 2,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/2/",
-            "id": "2"
+            "id": 2
         },
         {
             "name": "R2-D2",
@@ -566,13 +485,11 @@
                 5,
                 6
             ],
-            "species": [
-                2
-            ],
+            "species": 2,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/3/",
-            "id": "3"
+            "id": 3
         },
         {
             "name": "Darth Vader",
@@ -596,7 +513,7 @@
                 13
             ],
             "url": "https://swapi.dev/api/people/4/",
-            "id": "4"
+            "id": 4
         },
         {
             "name": "Leia Organa",
@@ -620,7 +537,7 @@
             ],
             "starships": [],
             "url": "https://swapi.dev/api/people/5/",
-            "id": "5"
+            "id": 5
         },
         {
             "name": "Owen Lars",
@@ -641,7 +558,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/6/",
-            "id": "6"
+            "id": 6
         },
         {
             "name": "Beru Whitesun lars",
@@ -662,7 +579,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/7/",
-            "id": "7"
+            "id": 7
         },
         {
             "name": "R5-D4",
@@ -677,13 +594,11 @@
             "films": [
                 1
             ],
-            "species": [
-                2
-            ],
+            "species": 2,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/8/",
-            "id": "8"
+            "id": 8
         },
         {
             "name": "Biggs Darklighter",
@@ -704,7 +619,7 @@
                 12
             ],
             "url": "https://swapi.dev/api/people/9/",
-            "id": "9"
+            "id": 9
         },
         {
             "name": "Obi-Wan Kenobi",
@@ -736,7 +651,7 @@
                 74
             ],
             "url": "https://swapi.dev/api/people/10/",
-            "id": "10"
+            "id": 10
         },
         {
             "name": "Anakin Skywalker",
@@ -764,7 +679,7 @@
                 65
             ],
             "url": "https://swapi.dev/api/people/11/",
-            "id": "11"
+            "id": 11
         },
         {
             "name": "Wilhuff Tarkin",
@@ -784,7 +699,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/12/",
-            "id": "12"
+            "id": 12
         },
         {
             "name": "Chewbacca",
@@ -802,9 +717,7 @@
                 3,
                 6
             ],
-            "species": [
-                3
-            ],
+            "species": 3,
             "vehicles": [
                 19
             ],
@@ -813,7 +726,7 @@
                 22
             ],
             "url": "https://swapi.dev/api/people/13/",
-            "id": "13"
+            "id": 13
         },
         {
             "name": "Han Solo",
@@ -837,7 +750,7 @@
                 22
             ],
             "url": "https://swapi.dev/api/people/14/",
-            "id": "14"
+            "id": 14
         },
         {
             "name": "Greedo",
@@ -852,13 +765,11 @@
             "films": [
                 1
             ],
-            "species": [
-                4
-            ],
+            "species": 4,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/15/",
-            "id": "15"
+            "id": 15
         },
         {
             "name": "Jabba Desilijic Tiure",
@@ -875,13 +786,11 @@
                 3,
                 4
             ],
-            "species": [
-                5
-            ],
+            "species": 5,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/16/",
-            "id": "16"
+            "id": 16
         },
         {
             "name": "Wedge Antilles",
@@ -906,7 +815,7 @@
                 12
             ],
             "url": "https://swapi.dev/api/people/18/",
-            "id": "18"
+            "id": 18
         },
         {
             "name": "Jek Tono Porkins",
@@ -927,7 +836,7 @@
                 12
             ],
             "url": "https://swapi.dev/api/people/19/",
-            "id": "19"
+            "id": 19
         },
         {
             "name": "Yoda",
@@ -946,13 +855,11 @@
                 5,
                 6
             ],
-            "species": [
-                6
-            ],
+            "species": 6,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/20/",
-            "id": "20"
+            "id": 20
         },
         {
             "name": "Palpatine",
@@ -975,7 +882,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/21/",
-            "id": "21"
+            "id": 21
         },
         {
             "name": "Boba Fett",
@@ -998,7 +905,7 @@
                 21
             ],
             "url": "https://swapi.dev/api/people/22/",
-            "id": "22"
+            "id": 22
         },
         {
             "name": "IG-88",
@@ -1013,13 +920,11 @@
             "films": [
                 2
             ],
-            "species": [
-                2
-            ],
+            "species": 2,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/23/",
-            "id": "23"
+            "id": 23
         },
         {
             "name": "Bossk",
@@ -1034,13 +939,11 @@
             "films": [
                 2
             ],
-            "species": [
-                7
-            ],
+            "species": 7,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/24/",
-            "id": "24"
+            "id": 24
         },
         {
             "name": "Lando Calrissian",
@@ -1062,7 +965,7 @@
                 10
             ],
             "url": "https://swapi.dev/api/people/25/",
-            "id": "25"
+            "id": 25
         },
         {
             "name": "Lobot",
@@ -1081,7 +984,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/26/",
-            "id": "26"
+            "id": 26
         },
         {
             "name": "Ackbar",
@@ -1096,13 +999,11 @@
             "films": [
                 3
             ],
-            "species": [
-                8
-            ],
+            "species": 8,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/27/",
-            "id": "27"
+            "id": 27
         },
         {
             "name": "Mon Mothma",
@@ -1121,7 +1022,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/28/",
-            "id": "28"
+            "id": 28
         },
         {
             "name": "Arvel Crynyd",
@@ -1142,7 +1043,7 @@
                 28
             ],
             "url": "https://swapi.dev/api/people/29/",
-            "id": "29"
+            "id": 29
         },
         {
             "name": "Wicket Systri Warrick",
@@ -1157,13 +1058,11 @@
             "films": [
                 3
             ],
-            "species": [
-                9
-            ],
+            "species": 9,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/30/",
-            "id": "30"
+            "id": 30
         },
         {
             "name": "Nien Nunb",
@@ -1178,15 +1077,13 @@
             "films": [
                 3
             ],
-            "species": [
-                10
-            ],
+            "species": 10,
             "vehicles": [],
             "starships": [
                 10
             ],
             "url": "https://swapi.dev/api/people/31/",
-            "id": "31"
+            "id": 31
         },
         {
             "name": "Qui-Gon Jinn",
@@ -1207,7 +1104,7 @@
             ],
             "starships": [],
             "url": "https://swapi.dev/api/people/32/",
-            "id": "32"
+            "id": 32
         },
         {
             "name": "Nute Gunray",
@@ -1224,13 +1121,11 @@
                 5,
                 6
             ],
-            "species": [
-                11
-            ],
+            "species": 11,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/33/",
-            "id": "33"
+            "id": 33
         },
         {
             "name": "Finis Valorum",
@@ -1249,7 +1144,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/34/",
-            "id": "34"
+            "id": 34
         },
         {
             "name": "Padm\u00e9 Amidala",
@@ -1274,7 +1169,7 @@
                 64
             ],
             "url": "https://swapi.dev/api/people/35/",
-            "id": "35"
+            "id": 35
         },
         {
             "name": "Jar Jar Binks",
@@ -1290,13 +1185,11 @@
                 4,
                 5
             ],
-            "species": [
-                12
-            ],
+            "species": 12,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/36/",
-            "id": "36"
+            "id": 36
         },
         {
             "name": "Roos Tarpals",
@@ -1311,13 +1204,11 @@
             "films": [
                 4
             ],
-            "species": [
-                12
-            ],
+            "species": 12,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/37/",
-            "id": "37"
+            "id": 37
         },
         {
             "name": "Rugor Nass",
@@ -1332,13 +1223,11 @@
             "films": [
                 4
             ],
-            "species": [
-                12
-            ],
+            "species": 12,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/38/",
-            "id": "38"
+            "id": 38
         },
         {
             "name": "Ric Oli\u00e9",
@@ -1359,7 +1248,7 @@
                 40
             ],
             "url": "https://swapi.dev/api/people/39/",
-            "id": "39"
+            "id": 39
         },
         {
             "name": "Watto",
@@ -1375,13 +1264,11 @@
                 4,
                 5
             ],
-            "species": [
-                13
-            ],
+            "species": 13,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/40/",
-            "id": "40"
+            "id": 40
         },
         {
             "name": "Sebulba",
@@ -1396,13 +1283,11 @@
             "films": [
                 4
             ],
-            "species": [
-                14
-            ],
+            "species": 14,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/41/",
-            "id": "41"
+            "id": 41
         },
         {
             "name": "Quarsh Panaka",
@@ -1421,7 +1306,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/42/",
-            "id": "42"
+            "id": 42
         },
         {
             "name": "Shmi Skywalker",
@@ -1441,7 +1326,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/43/",
-            "id": "43"
+            "id": 43
         },
         {
             "name": "Darth Maul",
@@ -1456,9 +1341,7 @@
             "films": [
                 4
             ],
-            "species": [
-                22
-            ],
+            "species": 22,
             "vehicles": [
                 42
             ],
@@ -1466,7 +1349,7 @@
                 41
             ],
             "url": "https://swapi.dev/api/people/44/",
-            "id": "44"
+            "id": 44
         },
         {
             "name": "Bib Fortuna",
@@ -1481,13 +1364,11 @@
             "films": [
                 3
             ],
-            "species": [
-                15
-            ],
+            "species": 15,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/45/",
-            "id": "45"
+            "id": 45
         },
         {
             "name": "Ayla Secura",
@@ -1504,13 +1385,11 @@
                 5,
                 6
             ],
-            "species": [
-                15
-            ],
+            "species": 15,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/46/",
-            "id": "46"
+            "id": 46
         },
         {
             "name": "Ratts Tyerel",
@@ -1525,13 +1404,11 @@
             "films": [
                 4
             ],
-            "species": [
-                16
-            ],
+            "species": 16,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/47/",
-            "id": "47"
+            "id": 47
         },
         {
             "name": "Dud Bolt",
@@ -1546,13 +1423,11 @@
             "films": [
                 4
             ],
-            "species": [
-                17
-            ],
+            "species": 17,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/48/",
-            "id": "48"
+            "id": 48
         },
         {
             "name": "Gasgano",
@@ -1567,13 +1442,11 @@
             "films": [
                 4
             ],
-            "species": [
-                18
-            ],
+            "species": 18,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/49/",
-            "id": "49"
+            "id": 49
         },
         {
             "name": "Ben Quadinaros",
@@ -1588,13 +1461,11 @@
             "films": [
                 4
             ],
-            "species": [
-                19
-            ],
+            "species": 19,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/50/",
-            "id": "50"
+            "id": 50
         },
         {
             "name": "Mace Windu",
@@ -1615,7 +1486,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/51/",
-            "id": "51"
+            "id": 51
         },
         {
             "name": "Ki-Adi-Mundi",
@@ -1632,13 +1503,11 @@
                 5,
                 6
             ],
-            "species": [
-                20
-            ],
+            "species": 20,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/52/",
-            "id": "52"
+            "id": 52
         },
         {
             "name": "Kit Fisto",
@@ -1655,13 +1524,11 @@
                 5,
                 6
             ],
-            "species": [
-                21
-            ],
+            "species": 21,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/53/",
-            "id": "53"
+            "id": 53
         },
         {
             "name": "Eeth Koth",
@@ -1677,13 +1544,11 @@
                 4,
                 6
             ],
-            "species": [
-                22
-            ],
+            "species": 22,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/54/",
-            "id": "54"
+            "id": 54
         },
         {
             "name": "Adi Gallia",
@@ -1699,13 +1564,11 @@
                 4,
                 6
             ],
-            "species": [
-                23
-            ],
+            "species": 23,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/55/",
-            "id": "55"
+            "id": 55
         },
         {
             "name": "Saesee Tiin",
@@ -1721,13 +1584,11 @@
                 4,
                 6
             ],
-            "species": [
-                24
-            ],
+            "species": 24,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/56/",
-            "id": "56"
+            "id": 56
         },
         {
             "name": "Yarael Poof",
@@ -1742,13 +1603,11 @@
             "films": [
                 4
             ],
-            "species": [
-                25
-            ],
+            "species": 25,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/57/",
-            "id": "57"
+            "id": 57
         },
         {
             "name": "Plo Koon",
@@ -1765,15 +1624,13 @@
                 5,
                 6
             ],
-            "species": [
-                26
-            ],
+            "species": 26,
             "vehicles": [],
             "starships": [
                 48
             ],
             "url": "https://swapi.dev/api/people/58/",
-            "id": "58"
+            "id": 58
         },
         {
             "name": "Mas Amedda",
@@ -1789,13 +1646,11 @@
                 4,
                 5
             ],
-            "species": [
-                27
-            ],
+            "species": 27,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/59/",
-            "id": "59"
+            "id": 59
         },
         {
             "name": "Gregar Typho",
@@ -1816,7 +1671,7 @@
                 39
             ],
             "url": "https://swapi.dev/api/people/60/",
-            "id": "60"
+            "id": 60
         },
         {
             "name": "Cord\u00e9",
@@ -1835,7 +1690,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/61/",
-            "id": "61"
+            "id": 61
         },
         {
             "name": "Cliegg Lars",
@@ -1854,7 +1709,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/62/",
-            "id": "62"
+            "id": 62
         },
         {
             "name": "Poggle the Lesser",
@@ -1870,13 +1725,11 @@
                 5,
                 6
             ],
-            "species": [
-                28
-            ],
+            "species": 28,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/63/",
-            "id": "63"
+            "id": 63
         },
         {
             "name": "Luminara Unduli",
@@ -1892,13 +1745,11 @@
                 5,
                 6
             ],
-            "species": [
-                29
-            ],
+            "species": 29,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/64/",
-            "id": "64"
+            "id": 64
         },
         {
             "name": "Barriss Offee",
@@ -1913,13 +1764,11 @@
             "films": [
                 5
             ],
-            "species": [
-                29
-            ],
+            "species": 29,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/65/",
-            "id": "65"
+            "id": 65
         },
         {
             "name": "Dorm\u00e9",
@@ -1934,13 +1783,11 @@
             "films": [
                 5
             ],
-            "species": [
-                1
-            ],
+            "species": 1,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/66/",
-            "id": "66"
+            "id": 66
         },
         {
             "name": "Dooku",
@@ -1956,15 +1803,13 @@
                 5,
                 6
             ],
-            "species": [
-                1
-            ],
+            "species": 1,
             "vehicles": [
                 55
             ],
             "starships": [],
             "url": "https://swapi.dev/api/people/67/",
-            "id": "67"
+            "id": 67
         },
         {
             "name": "Bail Prestor Organa",
@@ -1980,13 +1825,11 @@
                 5,
                 6
             ],
-            "species": [
-                1
-            ],
+            "species": 1,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/68/",
-            "id": "68"
+            "id": 68
         },
         {
             "name": "Jango Fett",
@@ -2005,7 +1848,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/69/",
-            "id": "69"
+            "id": 69
         },
         {
             "name": "Zam Wesell",
@@ -2020,15 +1863,13 @@
             "films": [
                 5
             ],
-            "species": [
-                30
-            ],
+            "species": 30,
             "vehicles": [
                 45
             ],
             "starships": [],
             "url": "https://swapi.dev/api/people/70/",
-            "id": "70"
+            "id": 70
         },
         {
             "name": "Dexter Jettster",
@@ -2043,13 +1884,11 @@
             "films": [
                 5
             ],
-            "species": [
-                31
-            ],
+            "species": 31,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/71/",
-            "id": "71"
+            "id": 71
         },
         {
             "name": "Lama Su",
@@ -2064,13 +1903,11 @@
             "films": [
                 5
             ],
-            "species": [
-                32
-            ],
+            "species": 32,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/72/",
-            "id": "72"
+            "id": 72
         },
         {
             "name": "Taun We",
@@ -2085,13 +1922,11 @@
             "films": [
                 5
             ],
-            "species": [
-                32
-            ],
+            "species": 32,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/73/",
-            "id": "73"
+            "id": 73
         },
         {
             "name": "Jocasta Nu",
@@ -2106,13 +1941,11 @@
             "films": [
                 5
             ],
-            "species": [
-                1
-            ],
+            "species": 1,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/74/",
-            "id": "74"
+            "id": 74
         },
         {
             "name": "R4-P17",
@@ -2132,7 +1965,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/75/",
-            "id": "75"
+            "id": 75
         },
         {
             "name": "Wat Tambor",
@@ -2147,13 +1980,11 @@
             "films": [
                 5
             ],
-            "species": [
-                33
-            ],
+            "species": 33,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/76/",
-            "id": "76"
+            "id": 76
         },
         {
             "name": "San Hill",
@@ -2168,13 +1999,11 @@
             "films": [
                 5
             ],
-            "species": [
-                34
-            ],
+            "species": 34,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/77/",
-            "id": "77"
+            "id": 77
         },
         {
             "name": "Shaak Ti",
@@ -2190,13 +2019,11 @@
                 5,
                 6
             ],
-            "species": [
-                35
-            ],
+            "species": 35,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/78/",
-            "id": "78"
+            "id": 78
         },
         {
             "name": "Grievous",
@@ -2211,9 +2038,7 @@
             "films": [
                 6
             ],
-            "species": [
-                36
-            ],
+            "species": 36,
             "vehicles": [
                 60
             ],
@@ -2221,7 +2046,7 @@
                 74
             ],
             "url": "https://swapi.dev/api/people/79/",
-            "id": "79"
+            "id": 79
         },
         {
             "name": "Tarfful",
@@ -2236,13 +2061,11 @@
             "films": [
                 6
             ],
-            "species": [
-                3
-            ],
+            "species": 3,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/80/",
-            "id": "80"
+            "id": 80
         },
         {
             "name": "Raymus Antilles",
@@ -2262,7 +2085,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/81/",
-            "id": "81"
+            "id": 81
         },
         {
             "name": "Sly Moore",
@@ -2282,7 +2105,7 @@
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/82/",
-            "id": "82"
+            "id": 82
         },
         {
             "name": "Tion Medon",
@@ -2297,13 +2120,11 @@
             "films": [
                 6
             ],
-            "species": [
-                37
-            ],
+            "species": 37,
             "vehicles": [],
             "starships": [],
             "url": "https://swapi.dev/api/people/83/",
-            "id": "83"
+            "id": 83
         }
     ],
     "planets": [
@@ -2337,7 +2158,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/1/",
-            "id": "1"
+            "id": 1
         },
         {
             "name": "Alderaan",
@@ -2359,7 +2180,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/2/",
-            "id": "2"
+            "id": 2
         },
         {
             "name": "Yavin IV",
@@ -2376,7 +2197,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/planets/3/",
-            "id": "3"
+            "id": 3
         },
         {
             "name": "Hoth",
@@ -2393,7 +2214,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/planets/4/",
-            "id": "4"
+            "id": 4
         },
         {
             "name": "Dagobah",
@@ -2412,7 +2233,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/5/",
-            "id": "5"
+            "id": 5
         },
         {
             "name": "Bespin",
@@ -2431,7 +2252,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/planets/6/",
-            "id": "6"
+            "id": 6
         },
         {
             "name": "Endor",
@@ -2450,7 +2271,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/planets/7/",
-            "id": "7"
+            "id": 7
         },
         {
             "name": "Naboo",
@@ -2482,7 +2303,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/8/",
-            "id": "8"
+            "id": 8
         },
         {
             "name": "Coruscant",
@@ -2506,7 +2327,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/9/",
-            "id": "9"
+            "id": 9
         },
         {
             "name": "Kamino",
@@ -2527,7 +2348,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/planets/10/",
-            "id": "10"
+            "id": 10
         },
         {
             "name": "Geonosis",
@@ -2546,7 +2367,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/planets/11/",
-            "id": "11"
+            "id": 11
         },
         {
             "name": "Utapau",
@@ -2565,7 +2386,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/12/",
-            "id": "12"
+            "id": 12
         },
         {
             "name": "Mustafar",
@@ -2582,7 +2403,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/13/",
-            "id": "13"
+            "id": 13
         },
         {
             "name": "Kashyyyk",
@@ -2602,7 +2423,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/14/",
-            "id": "14"
+            "id": 14
         },
         {
             "name": "Polis Massa",
@@ -2619,7 +2440,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/15/",
-            "id": "15"
+            "id": 15
         },
         {
             "name": "Mygeeto",
@@ -2636,7 +2457,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/16/",
-            "id": "16"
+            "id": 16
         },
         {
             "name": "Felucia",
@@ -2653,7 +2474,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/17/",
-            "id": "17"
+            "id": 17
         },
         {
             "name": "Cato Neimoidia",
@@ -2672,7 +2493,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/18/",
-            "id": "18"
+            "id": 18
         },
         {
             "name": "Saleucami",
@@ -2689,7 +2510,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/planets/19/",
-            "id": "19"
+            "id": 19
         },
         {
             "name": "Stewjon",
@@ -2706,7 +2527,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/20/",
-            "id": "20"
+            "id": 20
         },
         {
             "name": "Eriadu",
@@ -2723,7 +2544,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/21/",
-            "id": "21"
+            "id": 21
         },
         {
             "name": "Corellia",
@@ -2741,7 +2562,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/22/",
-            "id": "22"
+            "id": 22
         },
         {
             "name": "Rodia",
@@ -2758,7 +2579,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/23/",
-            "id": "23"
+            "id": 23
         },
         {
             "name": "Nal Hutta",
@@ -2775,7 +2596,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/24/",
-            "id": "24"
+            "id": 24
         },
         {
             "name": "Dantooine",
@@ -2790,7 +2611,7 @@
             "residents": [],
             "films": [],
             "url": "https://swapi.dev/api/planets/25/",
-            "id": "25"
+            "id": 25
         },
         {
             "name": "Bestine IV",
@@ -2807,7 +2628,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/26/",
-            "id": "26"
+            "id": 26
         },
         {
             "name": "Ord Mantell",
@@ -2824,7 +2645,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/planets/27/",
-            "id": "27"
+            "id": 27
         },
         {
             "name": "unknown",
@@ -2845,7 +2666,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/28/",
-            "id": "28"
+            "id": 28
         },
         {
             "name": "Trandosha",
@@ -2862,7 +2683,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/29/",
-            "id": "29"
+            "id": 29
         },
         {
             "name": "Socorro",
@@ -2879,7 +2700,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/30/",
-            "id": "30"
+            "id": 30
         },
         {
             "name": "Mon Cala",
@@ -2896,7 +2717,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/31/",
-            "id": "31"
+            "id": 31
         },
         {
             "name": "Chandrila",
@@ -2913,7 +2734,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/32/",
-            "id": "32"
+            "id": 32
         },
         {
             "name": "Sullust",
@@ -2930,7 +2751,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/33/",
-            "id": "33"
+            "id": 33
         },
         {
             "name": "Toydaria",
@@ -2947,7 +2768,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/34/",
-            "id": "34"
+            "id": 34
         },
         {
             "name": "Malastare",
@@ -2964,7 +2785,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/35/",
-            "id": "35"
+            "id": 35
         },
         {
             "name": "Dathomir",
@@ -2981,7 +2802,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/36/",
-            "id": "36"
+            "id": 36
         },
         {
             "name": "Ryloth",
@@ -2999,7 +2820,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/37/",
-            "id": "37"
+            "id": 37
         },
         {
             "name": "Aleen Minor",
@@ -3016,7 +2837,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/38/",
-            "id": "38"
+            "id": 38
         },
         {
             "name": "Vulpter",
@@ -3033,7 +2854,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/39/",
-            "id": "39"
+            "id": 39
         },
         {
             "name": "Troiken",
@@ -3050,7 +2871,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/40/",
-            "id": "40"
+            "id": 40
         },
         {
             "name": "Tund",
@@ -3067,7 +2888,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/41/",
-            "id": "41"
+            "id": 41
         },
         {
             "name": "Haruun Kal",
@@ -3084,7 +2905,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/42/",
-            "id": "42"
+            "id": 42
         },
         {
             "name": "Cerea",
@@ -3101,7 +2922,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/43/",
-            "id": "43"
+            "id": 43
         },
         {
             "name": "Glee Anselm",
@@ -3118,7 +2939,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/44/",
-            "id": "44"
+            "id": 44
         },
         {
             "name": "Iridonia",
@@ -3135,7 +2956,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/45/",
-            "id": "45"
+            "id": 45
         },
         {
             "name": "Tholoth",
@@ -3150,7 +2971,7 @@
             "residents": [],
             "films": [],
             "url": "https://swapi.dev/api/planets/46/",
-            "id": "46"
+            "id": 46
         },
         {
             "name": "Iktotch",
@@ -3167,7 +2988,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/47/",
-            "id": "47"
+            "id": 47
         },
         {
             "name": "Quermia",
@@ -3184,7 +3005,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/48/",
-            "id": "48"
+            "id": 48
         },
         {
             "name": "Dorin",
@@ -3201,7 +3022,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/49/",
-            "id": "49"
+            "id": 49
         },
         {
             "name": "Champala",
@@ -3218,7 +3039,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/50/",
-            "id": "50"
+            "id": 50
         },
         {
             "name": "Mirial",
@@ -3236,7 +3057,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/51/",
-            "id": "51"
+            "id": 51
         },
         {
             "name": "Serenno",
@@ -3253,7 +3074,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/52/",
-            "id": "52"
+            "id": 52
         },
         {
             "name": "Concord Dawn",
@@ -3270,7 +3091,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/53/",
-            "id": "53"
+            "id": 53
         },
         {
             "name": "Zolan",
@@ -3287,7 +3108,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/54/",
-            "id": "54"
+            "id": 54
         },
         {
             "name": "Ojom",
@@ -3304,7 +3125,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/55/",
-            "id": "55"
+            "id": 55
         },
         {
             "name": "Skako",
@@ -3321,7 +3142,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/56/",
-            "id": "56"
+            "id": 56
         },
         {
             "name": "Muunilinst",
@@ -3338,7 +3159,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/57/",
-            "id": "57"
+            "id": 57
         },
         {
             "name": "Shili",
@@ -3355,7 +3176,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/58/",
-            "id": "58"
+            "id": 58
         },
         {
             "name": "Kalee",
@@ -3372,7 +3193,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/59/",
-            "id": "59"
+            "id": 59
         },
         {
             "name": "Umbara",
@@ -3389,7 +3210,7 @@
             ],
             "films": [],
             "url": "https://swapi.dev/api/planets/60/",
-            "id": "60"
+            "id": 60
         }
     ],
     "species": [
@@ -3419,7 +3240,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/1/",
-            "id": "1"
+            "id": 1
         },
         {
             "name": "Droid",
@@ -3447,7 +3268,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/2/",
-            "id": "2"
+            "id": 2
         },
         {
             "name": "Wookie",
@@ -3471,7 +3292,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/3/",
-            "id": "3"
+            "id": 3
         },
         {
             "name": "Rodian",
@@ -3491,7 +3312,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/species/4/",
-            "id": "4"
+            "id": 4
         },
         {
             "name": "Hutt",
@@ -3512,7 +3333,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/species/5/",
-            "id": "5"
+            "id": 5
         },
         {
             "name": "Yoda's species",
@@ -3536,7 +3357,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/6/",
-            "id": "6"
+            "id": 6
         },
         {
             "name": "Trandoshan",
@@ -3556,7 +3377,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/species/7/",
-            "id": "7"
+            "id": 7
         },
         {
             "name": "Mon Calamari",
@@ -3576,7 +3397,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/species/8/",
-            "id": "8"
+            "id": 8
         },
         {
             "name": "Ewok",
@@ -3596,7 +3417,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/species/9/",
-            "id": "9"
+            "id": 9
         },
         {
             "name": "Sullustan",
@@ -3616,7 +3437,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/species/10/",
-            "id": "10"
+            "id": 10
         },
         {
             "name": "Neimodian",
@@ -3636,7 +3457,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/11/",
-            "id": "11"
+            "id": 11
         },
         {
             "name": "Gungan",
@@ -3659,7 +3480,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/species/12/",
-            "id": "12"
+            "id": 12
         },
         {
             "name": "Toydarian",
@@ -3680,7 +3501,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/species/13/",
-            "id": "13"
+            "id": 13
         },
         {
             "name": "Dug",
@@ -3700,7 +3521,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/14/",
-            "id": "14"
+            "id": 14
         },
         {
             "name": "Twi'lek",
@@ -3724,7 +3545,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/15/",
-            "id": "15"
+            "id": 15
         },
         {
             "name": "Aleena",
@@ -3744,7 +3565,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/16/",
-            "id": "16"
+            "id": 16
         },
         {
             "name": "Vulptereen",
@@ -3764,7 +3585,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/17/",
-            "id": "17"
+            "id": 17
         },
         {
             "name": "Xexto",
@@ -3784,7 +3605,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/18/",
-            "id": "18"
+            "id": 18
         },
         {
             "name": "Toong",
@@ -3805,7 +3626,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/19/",
-            "id": "19"
+            "id": 19
         },
         {
             "name": "Cerean",
@@ -3826,7 +3647,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/20/",
-            "id": "20"
+            "id": 20
         },
         {
             "name": "Nautolan",
@@ -3846,7 +3667,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/21/",
-            "id": "21"
+            "id": 21
         },
         {
             "name": "Zabrak",
@@ -3867,7 +3688,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/species/22/",
-            "id": "22"
+            "id": 22
         },
         {
             "name": "Tholothian",
@@ -3888,7 +3709,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/23/",
-            "id": "23"
+            "id": 23
         },
         {
             "name": "Iktotchi",
@@ -3909,7 +3730,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/24/",
-            "id": "24"
+            "id": 24
         },
         {
             "name": "Quermian",
@@ -3930,7 +3751,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/25/",
-            "id": "25"
+            "id": 25
         },
         {
             "name": "Kel Dor",
@@ -3951,7 +3772,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/26/",
-            "id": "26"
+            "id": 26
         },
         {
             "name": "Chagrian",
@@ -3972,7 +3793,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/27/",
-            "id": "27"
+            "id": 27
         },
         {
             "name": "Geonosian",
@@ -3993,7 +3814,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/28/",
-            "id": "28"
+            "id": 28
         },
         {
             "name": "Mirialan",
@@ -4015,7 +3836,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/29/",
-            "id": "29"
+            "id": 29
         },
         {
             "name": "Clawdite",
@@ -4036,7 +3857,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/30/",
-            "id": "30"
+            "id": 30
         },
         {
             "name": "Besalisk",
@@ -4056,7 +3877,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/species/31/",
-            "id": "31"
+            "id": 31
         },
         {
             "name": "Kaminoan",
@@ -4077,7 +3898,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/species/32/",
-            "id": "32"
+            "id": 32
         },
         {
             "name": "Skakoan",
@@ -4098,7 +3919,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/33/",
-            "id": "33"
+            "id": 33
         },
         {
             "name": "Muun",
@@ -4119,7 +3940,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/34/",
-            "id": "34"
+            "id": 34
         },
         {
             "name": "Togruta",
@@ -4140,7 +3961,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/35/",
-            "id": "35"
+            "id": 35
         },
         {
             "name": "Kaleesh",
@@ -4160,7 +3981,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/36/",
-            "id": "36"
+            "id": 36
         },
         {
             "name": "Pau'an",
@@ -4180,7 +4001,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/species/37/",
-            "id": "37"
+            "id": 37
         }
     ],
     "starships": [
@@ -4205,7 +4026,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/2/",
-            "id": "2"
+            "id": 2
         },
         {
             "name": "Star Destroyer",
@@ -4228,7 +4049,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/3/",
-            "id": "3"
+            "id": 3
         },
         {
             "name": "Sentinel-class landing craft",
@@ -4249,7 +4070,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/starships/5/",
-            "id": "5"
+            "id": 5
         },
         {
             "name": "Death Star",
@@ -4270,7 +4091,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/starships/9/",
-            "id": "9"
+            "id": 9
         },
         {
             "name": "Millennium Falcon",
@@ -4298,7 +4119,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/10/",
-            "id": "10"
+            "id": 10
         },
         {
             "name": "Y-wing",
@@ -4321,7 +4142,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/11/",
-            "id": "11"
+            "id": 11
         },
         {
             "name": "X-wing",
@@ -4349,7 +4170,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/12/",
-            "id": "12"
+            "id": 12
         },
         {
             "name": "TIE Advanced x1",
@@ -4372,7 +4193,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/starships/13/",
-            "id": "13"
+            "id": 13
         },
         {
             "name": "Executor",
@@ -4394,7 +4215,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/15/",
-            "id": "15"
+            "id": 15
         },
         {
             "name": "Rebel transport",
@@ -4416,7 +4237,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/17/",
-            "id": "17"
+            "id": 17
         },
         {
             "name": "Slave 1",
@@ -4440,7 +4261,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/21/",
-            "id": "21"
+            "id": 21
         },
         {
             "name": "Imperial shuttle",
@@ -4466,7 +4287,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/22/",
-            "id": "22"
+            "id": 22
         },
         {
             "name": "EF76 Nebulon-B escort frigate",
@@ -4488,7 +4309,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/23/",
-            "id": "23"
+            "id": 23
         },
         {
             "name": "Calamari Cruiser",
@@ -4509,7 +4330,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/27/",
-            "id": "27"
+            "id": 27
         },
         {
             "name": "A-wing",
@@ -4532,7 +4353,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/28/",
-            "id": "28"
+            "id": 28
         },
         {
             "name": "B-wing",
@@ -4553,7 +4374,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/starships/29/",
-            "id": "29"
+            "id": 29
         },
         {
             "name": "Republic Cruiser",
@@ -4574,7 +4395,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/starships/31/",
-            "id": "31"
+            "id": 31
         },
         {
             "name": "Droid control ship",
@@ -4597,7 +4418,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/32/",
-            "id": "32"
+            "id": 32
         },
         {
             "name": "Naboo fighter",
@@ -4623,7 +4444,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/39/",
-            "id": "39"
+            "id": 39
         },
         {
             "name": "Naboo Royal Starship",
@@ -4646,7 +4467,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/starships/40/",
-            "id": "40"
+            "id": 40
         },
         {
             "name": "Scimitar",
@@ -4669,7 +4490,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/starships/41/",
-            "id": "41"
+            "id": 41
         },
         {
             "name": "J-type diplomatic barge",
@@ -4690,7 +4511,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/43/",
-            "id": "43"
+            "id": 43
         },
         {
             "name": "AA-9 Coruscant freighter",
@@ -4711,7 +4532,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/47/",
-            "id": "47"
+            "id": 47
         },
         {
             "name": "Jedi starfighter",
@@ -4736,7 +4557,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/48/",
-            "id": "48"
+            "id": 48
         },
         {
             "name": "H-type Nubian yacht",
@@ -4759,7 +4580,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/49/",
-            "id": "49"
+            "id": 49
         },
         {
             "name": "Republic Assault ship",
@@ -4780,7 +4601,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/52/",
-            "id": "52"
+            "id": 52
         },
         {
             "name": "Solar Sailer",
@@ -4801,7 +4622,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/starships/58/",
-            "id": "58"
+            "id": 58
         },
         {
             "name": "Trade Federation cruiser",
@@ -4825,7 +4646,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/59/",
-            "id": "59"
+            "id": 59
         },
         {
             "name": "Theta-class T-2c shuttle",
@@ -4846,7 +4667,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/61/",
-            "id": "61"
+            "id": 61
         },
         {
             "name": "Republic attack cruiser",
@@ -4867,7 +4688,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/63/",
-            "id": "63"
+            "id": 63
         },
         {
             "name": "Naboo star skiff",
@@ -4891,7 +4712,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/64/",
-            "id": "64"
+            "id": 64
         },
         {
             "name": "Jedi Interceptor",
@@ -4915,7 +4736,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/65/",
-            "id": "65"
+            "id": 65
         },
         {
             "name": "arc-170",
@@ -4936,7 +4757,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/66/",
-            "id": "66"
+            "id": 66
         },
         {
             "name": "Banking clan frigte",
@@ -4957,7 +4778,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/68/",
-            "id": "68"
+            "id": 68
         },
         {
             "name": "Belbullab-22 starfighter",
@@ -4981,7 +4802,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/74/",
-            "id": "74"
+            "id": 74
         },
         {
             "name": "V-wing",
@@ -5002,7 +4823,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/starships/75/",
-            "id": "75"
+            "id": 75
         }
     ],
     "vehicles": [
@@ -5024,7 +4845,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/4/",
-            "id": "4"
+            "id": 4
         },
         {
             "name": "T-16 skyhopper",
@@ -5043,7 +4864,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/vehicles/6/",
-            "id": "6"
+            "id": 6
         },
         {
             "name": "X-34 landspeeder",
@@ -5062,7 +4883,7 @@
                 1
             ],
             "url": "https://swapi.dev/api/vehicles/7/",
-            "id": "7"
+            "id": 7
         },
         {
             "name": "TIE/LN starfighter",
@@ -5083,7 +4904,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/8/",
-            "id": "8"
+            "id": 8
         },
         {
             "name": "Snowspeeder",
@@ -5105,7 +4926,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/vehicles/14/",
-            "id": "14"
+            "id": 14
         },
         {
             "name": "TIE bomber",
@@ -5125,7 +4946,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/16/",
-            "id": "16"
+            "id": 16
         },
         {
             "name": "AT-AT",
@@ -5145,7 +4966,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/18/",
-            "id": "18"
+            "id": 18
         },
         {
             "name": "AT-ST",
@@ -5167,7 +4988,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/19/",
-            "id": "19"
+            "id": 19
         },
         {
             "name": "Storm IV Twin-Pod cloud car",
@@ -5186,7 +5007,7 @@
                 2
             ],
             "url": "https://swapi.dev/api/vehicles/20/",
-            "id": "20"
+            "id": 20
         },
         {
             "name": "Sail barge",
@@ -5205,7 +5026,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/24/",
-            "id": "24"
+            "id": 24
         },
         {
             "name": "Bantha-II cargo skiff",
@@ -5224,7 +5045,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/25/",
-            "id": "25"
+            "id": 25
         },
         {
             "name": "TIE/IN interceptor",
@@ -5243,7 +5064,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/26/",
-            "id": "26"
+            "id": 26
         },
         {
             "name": "Imperial Speeder Bike",
@@ -5265,7 +5086,7 @@
                 3
             ],
             "url": "https://swapi.dev/api/vehicles/30/",
-            "id": "30"
+            "id": 30
         },
         {
             "name": "Vulture Droid",
@@ -5285,7 +5106,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/33/",
-            "id": "33"
+            "id": 33
         },
         {
             "name": "Multi-Troop Transport",
@@ -5304,7 +5125,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/34/",
-            "id": "34"
+            "id": 34
         },
         {
             "name": "Armored Assault Tank",
@@ -5323,7 +5144,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/35/",
-            "id": "35"
+            "id": 35
         },
         {
             "name": "Single Trooper Aerial Platform",
@@ -5342,7 +5163,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/36/",
-            "id": "36"
+            "id": 36
         },
         {
             "name": "C-9979 landing craft",
@@ -5361,7 +5182,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/37/",
-            "id": "37"
+            "id": 37
         },
         {
             "name": "Tribubble bongo",
@@ -5383,7 +5204,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/38/",
-            "id": "38"
+            "id": 38
         },
         {
             "name": "Sith speeder",
@@ -5404,7 +5225,7 @@
                 4
             ],
             "url": "https://swapi.dev/api/vehicles/42/",
-            "id": "42"
+            "id": 42
         },
         {
             "name": "Zephyr-G swoop bike",
@@ -5425,7 +5246,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/44/",
-            "id": "44"
+            "id": 44
         },
         {
             "name": "Koro-2 Exodrive airspeeder",
@@ -5446,7 +5267,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/45/",
-            "id": "45"
+            "id": 45
         },
         {
             "name": "XJ-6 airspeeder",
@@ -5467,7 +5288,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/46/",
-            "id": "46"
+            "id": 46
         },
         {
             "name": "LAAT/i",
@@ -5487,7 +5308,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/50/",
-            "id": "50"
+            "id": 50
         },
         {
             "name": "LAAT/c",
@@ -5506,7 +5327,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/51/",
-            "id": "51"
+            "id": 51
         },
         {
             "name": "AT-TE",
@@ -5526,7 +5347,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/53/",
-            "id": "53"
+            "id": 53
         },
         {
             "name": "SPHA",
@@ -5545,7 +5366,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/54/",
-            "id": "54"
+            "id": 54
         },
         {
             "name": "Flitknot speeder",
@@ -5566,7 +5387,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/55/",
-            "id": "55"
+            "id": 55
         },
         {
             "name": "Neimoidian shuttle",
@@ -5586,7 +5407,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/56/",
-            "id": "56"
+            "id": 56
         },
         {
             "name": "Geonosian starfighter",
@@ -5605,7 +5426,7 @@
                 5
             ],
             "url": "https://swapi.dev/api/vehicles/57/",
-            "id": "57"
+            "id": 57
         },
         {
             "name": "Tsmeu-6 personal wheel bike",
@@ -5626,7 +5447,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/60/",
-            "id": "60"
+            "id": 60
         },
         {
             "name": "Emergency Firespeeder",
@@ -5645,7 +5466,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/62/",
-            "id": "62"
+            "id": 62
         },
         {
             "name": "Droid tri-fighter",
@@ -5664,7 +5485,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/67/",
-            "id": "67"
+            "id": 67
         },
         {
             "name": "Oevvaor jet catamaran",
@@ -5683,7 +5504,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/69/",
-            "id": "69"
+            "id": 69
         },
         {
             "name": "Raddaugh Gnasp fluttercraft",
@@ -5702,7 +5523,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/70/",
-            "id": "70"
+            "id": 70
         },
         {
             "name": "Clone turbo tank",
@@ -5721,7 +5542,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/71/",
-            "id": "71"
+            "id": 71
         },
         {
             "name": "Corporate Alliance tank droid",
@@ -5740,7 +5561,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/72/",
-            "id": "72"
+            "id": 72
         },
         {
             "name": "Droid gunship",
@@ -5759,7 +5580,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/73/",
-            "id": "73"
+            "id": 73
         },
         {
             "name": "AT-RT",
@@ -5778,7 +5599,7 @@
                 6
             ],
             "url": "https://swapi.dev/api/vehicles/76/",
-            "id": "76"
+            "id": 76
         }
     ]
 }
