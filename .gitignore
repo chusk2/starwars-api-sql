@@ -1,2 +1,4 @@
+.idea/
+__pynb__/
 .env
 *venv/
