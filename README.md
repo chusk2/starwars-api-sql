@@ -44,6 +44,9 @@ The database is designed to be relational, with foreign keys linking entities. M
 
 For the detailed schema, please refer to the `database/create_sw_db.sql` file.
 
+### ERD (Entity-Relationship Diagram)
+<img src="database/database_ERD.jpg" alt="Database ERD" width="80%">
+
 ## Setup and Installation
 
 ### 1. Prerequisites
@@ -125,8 +128,10 @@ You will see log messages in your console indicating the progress of each step.
 ├── data/                 # Directory for cached JSON and exported CSV files
 ├── database/
 │   └── create_sw_db.sql  # SQL script for DB schema creation
+│   │── database_ERD.jpg  # ERD image
 ├── scripts/
-│   └── swapi_scraping.py # Main ETL script
+│   └── swapi_scraping.py       # Main ETL script
+│   │── swapi_scraping.ipynb    # Jupyter notebook version of the script
 ├── .env                  # Environment variables (needs to be created)
 └── README.md             # This file
 ```
