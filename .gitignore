@@ -1,2 +1,4 @@
 .idea/
 __ipynb__/
+.env
+*venv/

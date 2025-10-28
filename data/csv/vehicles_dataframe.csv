@@ -1,0 +1,40 @@
+vehicle_id,name,model,manufacturer,cost_in_credits,length,max_atmosphering_speed,crew,passengers,cargo_capacity,consumables,vehicle_class,pilot_id,film_id,url
+4,Sand Crawler,Digger Crawler,Corellia Mining Corporation,150000.0,36.8,30.0,46.0,30.0,50000.0,2 months,wheeled,(),"(1, 5)",https://swapi.dev/api/vehicles/4/
+6,T-16 skyhopper,T-16 skyhopper,Incom Corporation,14500.0,10.4,1200.0,1.0,1.0,50.0,none,repulsorcraft,(),"(1,)",https://swapi.dev/api/vehicles/6/
+7,X-34 landspeeder,X-34 landspeeder,SoroSuub Corporation,10550.0,3.4,250.0,1.0,1.0,5.0,unknown,repulsorcraft,(),"(1,)",https://swapi.dev/api/vehicles/7/
+8,TIE/LN starfighter,Twin Ion Engine/Ln Starfighter,Sienar Fleet Systems,,6.4,1200.0,1.0,0.0,65.0,2 days,starfighter,(),"(1, 2, 3)",https://swapi.dev/api/vehicles/8/
+14,Snowspeeder,t-47 airspeeder,Incom corporation,,4.5,650.0,2.0,0.0,10.0,none,airspeeder,"(1, 18)","(2,)",https://swapi.dev/api/vehicles/14/
+16,TIE bomber,TIE/sa bomber,Sienar Fleet Systems,,7.8,850.0,1.0,0.0,,2 days,space/planetary bomber,(),"(2, 3)",https://swapi.dev/api/vehicles/16/
+18,AT-AT,All Terrain Armored Transport,"Kuat Drive Yards, Imperial Department of Military Research",,20.0,60.0,5.0,40.0,1000.0,unknown,assault walker,(),"(2, 3)",https://swapi.dev/api/vehicles/18/
+19,AT-ST,All Terrain Scout Transport,"Kuat Drive Yards, Imperial Department of Military Research",,2.0,90.0,2.0,0.0,200.0,none,walker,"(13,)","(2, 3)",https://swapi.dev/api/vehicles/19/
+20,Storm IV Twin-Pod cloud car,Storm IV Twin-Pod,Bespin Motors,75000.0,7.0,1500.0,2.0,0.0,10.0,1 day,repulsorcraft,(),"(2,)",https://swapi.dev/api/vehicles/20/
+24,Sail barge,Modified Luxury Sail Barge,Ubrikkian Industries Custom Vehicle Division,285000.0,30.0,100.0,26.0,500.0,2000000.0,Live food tanks,sail barge,(),"(3,)",https://swapi.dev/api/vehicles/24/
+25,Bantha-II cargo skiff,Bantha-II,Ubrikkian Industries,8000.0,9.5,250.0,5.0,16.0,135000.0,1 day,repulsorcraft cargo skiff,(),"(3,)",https://swapi.dev/api/vehicles/25/
+26,TIE/IN interceptor,Twin Ion Engine Interceptor,Sienar Fleet Systems,,9.6,1250.0,1.0,0.0,75.0,2 days,starfighter,(),"(3,)",https://swapi.dev/api/vehicles/26/
+30,Imperial Speeder Bike,74-Z speeder bike,Aratech Repulsor Company,8000.0,3.0,360.0,1.0,1.0,4.0,1 day,speeder,"(1, 5)","(3,)",https://swapi.dev/api/vehicles/30/
+33,Vulture Droid,Vulture-class droid starfighter,"Haor Chall Engineering, Baktoid Armor Workshop",,3.5,1200.0,0.0,0.0,0.0,none,starfighter,(),"(4, 6)",https://swapi.dev/api/vehicles/33/
+34,Multi-Troop Transport,Multi-Troop Transport,Baktoid Armor Workshop,138000.0,31.0,35.0,4.0,112.0,12000.0,unknown,repulsorcraft,(),"(4,)",https://swapi.dev/api/vehicles/34/
+35,Armored Assault Tank,Armoured Assault Tank,Baktoid Armor Workshop,,9.75,55.0,4.0,6.0,,unknown,repulsorcraft,(),"(4,)",https://swapi.dev/api/vehicles/35/
+36,Single Trooper Aerial Platform,Single Trooper Aerial Platform,Baktoid Armor Workshop,2500.0,2.0,400.0,1.0,0.0,,none,repulsorcraft,(),"(4,)",https://swapi.dev/api/vehicles/36/
+37,C-9979 landing craft,C-9979 landing craft,Haor Chall Engineering,200000.0,210.0,587.0,140.0,284.0,1800000.0,1 day,landing craft,(),"(4,)",https://swapi.dev/api/vehicles/37/
+38,Tribubble bongo,Tribubble bongo,Otoh Gunga Bongameken Cooperative,,15.0,85.0,1.0,2.0,1600.0,unknown,submarine,"(10, 32)","(4,)",https://swapi.dev/api/vehicles/38/
+42,Sith speeder,FC-20 speeder bike,Razalon,4000.0,1.5,180.0,1.0,0.0,2.0,unknown,speeder,"(44,)","(4,)",https://swapi.dev/api/vehicles/42/
+44,Zephyr-G swoop bike,Zephyr-G swoop bike,Mobquet Swoops and Speeders,5750.0,3.68,350.0,1.0,1.0,200.0,none,repulsorcraft,"(11,)","(5,)",https://swapi.dev/api/vehicles/44/
+45,Koro-2 Exodrive airspeeder,Koro-2 Exodrive airspeeder,Desler Gizh Outworld Mobility Corporation,,6.6,800.0,1.0,1.0,80.0,unknown,airspeeder,"(70,)","(5,)",https://swapi.dev/api/vehicles/45/
+46,XJ-6 airspeeder,XJ-6 airspeeder,Narglatch AirTech prefabricated kit,,6.23,720.0,1.0,1.0,,unknown,airspeeder,"(11,)","(5,)",https://swapi.dev/api/vehicles/46/
+50,LAAT/i,Low Altitude Assault Transport/infrantry,Rothana Heavy Engineering,,17.4,620.0,6.0,30.0,170.0,unknown,gunship,(),"(5, 6)",https://swapi.dev/api/vehicles/50/
+51,LAAT/c,Low Altitude Assault Transport/carrier,Rothana Heavy Engineering,,28.82,620.0,1.0,0.0,40000.0,unknown,gunship,(),"(5,)",https://swapi.dev/api/vehicles/51/
+53,AT-TE,All Terrain Tactical Enforcer,"Rothana Heavy Engineering, Kuat Drive Yards",,13.2,60.0,6.0,36.0,10000.0,21 days,walker,(),"(5, 6)",https://swapi.dev/api/vehicles/53/
+54,SPHA,Self-Propelled Heavy Artillery,Rothana Heavy Engineering,,140.0,35.0,25.0,30.0,500.0,7 days,walker,(),"(5,)",https://swapi.dev/api/vehicles/54/
+55,Flitknot speeder,Flitknot speeder,Huppla Pasa Tisc Shipwrights Collective,8000.0,2.0,634.0,1.0,0.0,,unknown,speeder,"(67,)","(5,)",https://swapi.dev/api/vehicles/55/
+56,Neimoidian shuttle,Sheathipede-class transport shuttle,Haor Chall Engineering,,20.0,880.0,2.0,6.0,1000.0,7 days,transport,(),"(5, 6)",https://swapi.dev/api/vehicles/56/
+57,Geonosian starfighter,Nantex-class territorial defense,Huppla Pasa Tisc Shipwrights Collective,,9.8,20000.0,1.0,0.0,,unknown,starfighter,(),"(5,)",https://swapi.dev/api/vehicles/57/
+60,Tsmeu-6 personal wheel bike,Tsmeu-6 personal wheel bike,Z-Gomot Ternbuell Guppat Corporation,15000.0,3.5,330.0,1.0,1.0,10.0,none,wheeled walker,"(79,)","(6,)",https://swapi.dev/api/vehicles/60/
+62,Emergency Firespeeder,Fire suppression speeder,unknown,,,,2.0,,,unknown,fire suppression ship,(),"(6,)",https://swapi.dev/api/vehicles/62/
+67,Droid tri-fighter,tri-fighter,"Colla Designs, Phlac-Arphocc Automata Industries",20000.0,5.4,1180.0,1.0,0.0,0.0,none,droid starfighter,(),"(6,)",https://swapi.dev/api/vehicles/67/
+69,Oevvaor jet catamaran,Oevvaor jet catamaran,Appazanna Engineering Works,12125.0,15.1,420.0,2.0,2.0,50.0,3 days,airspeeder,(),"(6,)",https://swapi.dev/api/vehicles/69/
+70,Raddaugh Gnasp fluttercraft,Raddaugh Gnasp fluttercraft,Appazanna Engineering Works,14750.0,7.0,310.0,2.0,0.0,20.0,none,air speeder,(),"(6,)",https://swapi.dev/api/vehicles/70/
+71,Clone turbo tank,HAVw A6 Juggernaut,Kuat Drive Yards,350000.0,49.4,160.0,20.0,300.0,30000.0,20 days,wheeled walker,(),"(6,)",https://swapi.dev/api/vehicles/71/
+72,Corporate Alliance tank droid,NR-N99 Persuader-class droid enforcer,Techno Union,49000.0,10.96,100.0,0.0,4.0,,none,droid tank,(),"(6,)",https://swapi.dev/api/vehicles/72/
+73,Droid gunship,HMP droid gunship,"Baktoid Fleet Ordnance, Haor Chall Engineering",60000.0,12.3,820.0,0.0,0.0,0.0,none,airspeeder,(),"(6,)",https://swapi.dev/api/vehicles/73/
+76,AT-RT,All Terrain Recon Transport,Kuat Drive Yards,40000.0,3.2,90.0,1.0,0.0,20.0,1 day,walker,(),"(6,)",https://swapi.dev/api/vehicles/76/

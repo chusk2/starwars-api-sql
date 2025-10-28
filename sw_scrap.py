@@ -1,9 +1,24 @@
+# %% [markdown]
+# # Imports
+
 # %%
 import requests as rq
 import pandas as pd
 import os
 import numpy as np
 import json
+from dotenv import load_dotenv
+from sqlalchemy import create_engine
+import copy
+
+# %%
+def show_cols(dict_):
+    for cat in dict_.keys():
+        print(f'\n\nCategory: {cat}')
+        print(*[ i for i in dict_[cat].columns], sep = '\n')
+
+# %% [markdown]
+# # Definitions
 
 # %%
 base_urls = {
@@ -19,141 +34,186 @@ base_urls = {
 categories = list(base_urls.keys())
 categories
 
+# %% [markdown]
+# Each category has different fields that contain information in the form of an url. I will extract the page id from those fields for each category. 
+
 # %%
 fields = {
+    'films' : ["characters", "planets", "starships", "vehicles", "species"],
     'people' : ["homeworld", "films", "species", "vehicles", "starships"],
     'planets' : ['residents', 'films'],
-    'films' : ["characters", "planets", "starships", "vehicles", "species"],
-    'species' : ['people', 'films'],
+    'species' : ['people', 'films', 'homeworld'],
     'vehicles' : ['pilots', 'films'],
     'starships' : ['pilots', 'films']
     }
 
-# %%
-def get_page_items(url, fields):
-        
-    # get the content of the url
-    response = rq.get(url)
+# %% [markdown]
+# # Consume the API
 
-    # success
-    if response.status_code == 200:
-        content = response.json()
-    elif response.status_code == 404:
-        print(f'{url} not found!')
-        return
-    
+# %%
+def scrape_category(url):
+
+    # skip the next url for the first page of pager
+    next = url    
     items_list = []
 
-    next = content['next']
-    items = content['results']
+    while next:
+        # get the content of the url
+        response = rq.get(next)
 
-    for item in items:
+        # success
+        if response.status_code == 200:
+            content = response.json()
+        elif response.status_code == 404:
+            print(f'{url} not found!')
+            return
+        
+        next = content['next']
+        items = content['results']
 
-        for field in fields:
-            id_values = []
-                           
-            if item[field]:  # if the field is not empty
-                # parse the links from starships, vehicles and starships
-                if field != 'homeworld':  
-                    for link in item[field]:
-                        # parse the id value in the link    
-                        id_values.append(int(link.split('/')[-2]))
-                    # add the id values into the corresponding field key
-                    # convert list into tuple, as tuples are hashable
-                    # each character belongs to only 1 species
-                    if field != 'species':
-                        item[field] = tuple(id_values)
-                    else:
-                        item[field] = id_values[0]
+        for item in items:
+                    
+            # remove created and edited fields
+            try:
+                del(item['created'])
+                del(item['edited'])
+            except:
+                pass
+            
+            items_list.append(item)            
+
+    return items_list
+
+# %% [markdown]
+# ## Scrape all the categories and store in *starwars_raw.json*
+
+# %%
+if not os.path.exists('./data/starwars_raw.json'):
+    print('Scrapping all the categories from the API...')
+    raw_dict = {cat : scrape_category(base_urls[cat]) for cat in categories}
+    
+    # store into a json file
+    with open('./data/starwars_raw.json', 'w') as file:
+        json.dump(raw_dict, file, indent=4 )
+    print('Content from Star Wars API stored in a json file!')
+
+else:
+    print('The content already exists in a json file!')
+    with open('starwars_scrapped.json', 'r') as file:
+        raw_dict = json.load(file)
+
+# %% [markdown]
+# Function to process the information of an item from a category.
+# Ex. one character, one planet or one film.
+
+# %%
+def process_item(item, fields):
+
+    # create a copy of the item dictionary
+    item = copy.deepcopy(item)
+
+    # parse the links from starships, vehicles and species
+    for field in fields:
+        id_values = []
                         
-                # parse the homeworld (just a single string value)
-                else:
-                    # get the homeworld id
-                    item['homeworld'] = int(item['homeworld'].split('/')[-2])
+        if item[field]:  # if the field is not empty
             
-            # parse species field
-            # in case of human characters, the species field is an empty list
-            elif field == 'species' and not item[field]:
-                item[field] = 1
-            
-            # field has no values (empty list)
+            # parse the homeworld (just a single string value)
+            if field == 'homeworld':
+                # get the homeworld id
+                item['homeworld'] = int(item['homeworld'].split('/')[-2])
+
             else:
-                item[field] = ()
-                  
-        # remove created and edited fields
-        try:
-            del(item['created'])
-            del(item['edited'])
-        except:
-            pass
-        
-        items_list.append(item)
+                for link in item[field]:
 
-    return next, items_list
+                    # parse the id value in the link    
+                    id_values.append(int(link.split('/')[-2]))
+
+                # add the id values into the corresponding field key
+                # convert list into tuple, as tuples are hashable
+                item[field] = tuple(id_values)
+
+                # each character belongs to only 1 species
+                # that way, the species contains
+        
+        # if species is an empty list, it's a human character
+        elif field == 'species' and not item['species']:
+            item[field] = 1
+                    
+        # field has no values (empty list)
+        else:
+            item[field] = ()
+    
+    # add the id, extracted from the url
+    item['id'] = item['url'].split('/')[-2]
+    
+    # remove created and edited fields
+    try:
+        del(item['created'])
+        del(item['edited'])
+    except:
+        pass
+
+    return item
 
 # %% [markdown]
-# Scrape all the information from the Star Wars API, for all the available categories
+# # Store the processed data
 
 # %%
-if not os.path.exists('./data/starwars.json'):
-    items = dict.fromkeys(categories)
-
-    for category in categories:
-        items_list = []
-        url = base_urls[category]
-        category_fields = fields[category]
-        while url:
-            url, page_items = get_page_items(url, category_fields)
-            items_list.extend(page_items)
-        
-        items[category] = items_list
-
-        print(f'{category} successfully scrapped!')
-
-    print('\n\nWhole database fully scrapped!')
-    print('\nNow the information will be stored in a json file...')
-
+if not os.path.exists('./data/starwars_processed_items.json'):
+    # dictionary to store the processed categories
+    processed_dict = {}
+    
+    # process each item for all the categories
+    for k,v in raw_dict.items():
+        items_processed = []
+        for item in v:
+            try:
+                items_processed.append(process_item(item, fields[k]))
+                processed_dict[k] = items_processed
+            except:
+                print(f'Error in {k}')
+    
     # store the information in a json file
-    filepath = './data/starwars.json'
-    if not os.path.exists(filepath):
-        with open(filepath, 'w') as file:
-            json.dump(items, file, indent=4)
+    with open('./data/starwars_processed_items.json', 'w') as file:
+        json.dump(processed_dict, file, indent = 4)
 
-        # remove the carriage return character
-        with open(filepath, 'r') as file:
-            content = file.readlines()
+# the file already exists, so load it
+else:
+    with open('./data/starwars_processed_items.json', 'r') as file:
+        processed_dict= json.load(file)
 
-        # replace the \\r\\n (the codes are escaped) string with just \\n
-            for index, line in enumerate(content):
-                content[index] = line.replace('\\r\\n', '\\n')
+        # convert lists into tuples after reading from json file
+        for cat in categories:
+            for item in processed_dict[cat]:
+                for field in fields[cat]:
+                    try:
+                        item[field] = tuple(item[field])
+                    # the content of the field is an integer
+                    # and not a list. Cannot create a tuple from
+                    # an integer using tuple(int)
+                    except:
+                        pass  # do not convert into a tuple, leave it as integer
 
-        # after replacement, store its content
-        with open(filepath, 'w') as file:
-            file.writelines(content)
-        
-        print(f'Scrapped content stored at: {filepath}')
-    # The file already exists and will be read
-    else:
-        print('starwars.json file already exists!')
-        print('Information will be read and stored in items dictionary.')
-        items = {}
-        with open(filepath, 'r') as file:
-            items = json.load(file)
-        print(f'Scrapped content will be stored at {filepath}')
-
-# %% [markdown]
-# ## Store the dataframes from each category in a dictionary
+    print('Processed data already existed, so the *categories_dict_processed* dictionary will be created from json file.')
 
 # %%
-categories_dataframes = dict.fromkeys(categories)
+processed_dict['people']
 
 # %% [markdown]
-# ### Generate the dataframes
+# # Dataframes
+
+# %% [markdown]
+# ## Create the dataframes
+# Create a dictionary to store the dataframes from each category
+
+# %%
+dataframes = dict.fromkeys(categories)
 
 # %%
 for cat in categories:
-    df = pd.DataFrame(items[cat])
-    df['id'] = df.index + 1
+    df = pd.DataFrame(processed_dict[cat])
+    #df['id'] = df.index + 1
 
     # rename columns to add '_id' to the "fields"
     rename_dict = {field : f'{field}_id' for field in fields[cat]}
@@ -163,54 +223,430 @@ for cat in categories:
     # reorder the columns to place id in first place
     all_columns_but_cat_id = [col for col in df.columns if col != f'{cat}_id']
     sorted_columns = [f'{cat}_id'] + all_columns_but_cat_id
-    categories_dataframes[cat] = df[sorted_columns]
+    dataframes[cat] = df[sorted_columns]
 #df.to_csv('./data/starwars_characters.csv', index = False)
 
 # %% [markdown]
-# ## Junction tables
-# (many-to-many relationships in the database)
-# 
-# 1. people_films: Links people to the films they appeared in.
-# 
-#     - person_id: Foreign Key referencing the people table.
-#     - film_id: Foreign Key referencing the films table.
-# 
-# 2. people_vehicles: Links people to the vehicles they have piloted.
-# 
-#     - person_id: Foreign Key referencing the people table.
-#     - vehicle_id: Foreign Key referencing the vehicles table.
-# 
-# 3. people_starships: Links people to the starships they have piloted.
-# 
-#     - person_id: Foreign Key referencing the people table.
-#     - starship_id: Foreign Key referencing the starships table.
+# ## Rename some columns
+# Make some renamings to the column names
 
 # %%
-junction_tables = ['people_films', 'people_vehicles', 'people_starships']
-junction_tables = [f'{table}_junction_table' for table in junction_tables]
-junction_tables
+col_rename_dict= {
+    
+    'films': {
+        'characters_id': 'character_id',
+        'films_id': 'film_id',
+        'planets_id': 'planet_id',
+        'episode_id': 'episode',
+        'starships_id': 'starship_id',
+        'vehicles_id': 'vehicle_id',
+    },
+    
+    'people': {
+        'people_id': 'character_id',
+        'films_id': 'film_id',
+        'vehicles_id': 'vehicle_id',
+        'starships_id': 'starship_id'
+    },
+
+    'planets': {
+        'planets_id': 'planet_id',
+        'films_id': 'film_id'
+    },
+
+    'species': {
+        'people_id': 'character_id',
+        'films_id': 'film_id'
+    },
+
+    'vehicles': {
+        'pilots_id': 'pilot_id',
+        'vehicles_id': 'vehicle_id',
+        'films_id': 'film_id'
+    },
+
+    'starships': {
+        'pilots_id': 'pilot_id',
+        'starships_id': 'starship_id',
+        'films_id': 'film_id'
+    }
+}
 
 # %%
-data = categories_dataframes['people'].loc[:, ['people_id', 'films_id', 'vehicles_id', 'starships_id']]
-
-# junction table for people and films
-people_film_junction = data.explode('films_id').drop(['vehicles_id', 'starships_id'], axis = 1)
-
-# junction table for people and vehicles
-people_vehicles_junction = data.explode('vehicles_id').drop(['films_id', 'starships_id'], axis = 1)
-
-# junction table for people and starships
-people_starships_junction = data.explode('starships_id').drop(['films_id', 'vehicles_id'], axis = 1)
+for cat in categories:
+    dataframes[cat].rename(columns=col_rename_dict[cat], inplace=True)
 
 # %% [markdown]
-# ## Example of joined people and their vehicles
+# ## Clean the datasets
+
+# %% [markdown]
+# ### Clean people
 
 # %%
-# df2 = pd.merge(people_vehicles_junction, categories_dataframes['people'], on='people_id', how = 'inner')
-# df2.rename(columns={'vehicles_id_x' : 'vehicles_id'}, inplace=True)
+df = dataframes['people']
+df.sample(5)
 
-# df2 = pd.merge(df2, categories_dataframes['vehicles'], on='vehicles_id')
-# #df2.drop(['people_id', 'vehicles_id'], axis = 1)
-# df2.head()
+# %%
+df.dtypes
+
+# %%
+df.mass = df.mass.replace('unknown', np.nan)
+df.mass = df.mass.str.replace(',', '', regex=False)
+df.mass = df.mass.astype('float') 
+
+# %%
+df.height = df.height.replace('unknown', np.nan).astype('float')
+
+# %%
+df.hair_color = df.hair_color.replace('n/a', np.nan)
+
+# %%
+df.birth_year = df.birth_year.str.replace('BBY', ' BBY')
+
+# %% [markdown]
+# ### Clean films
+
+# %%
+df = dataframes['films']
+df.sample(5)
+
+# %%
+df.species_id.unique()
+
+# %%
+df.dtypes
+
+# %%
+df.release_date = pd.to_datetime(df.release_date)
+
+# %% [markdown]
+# ### Clean planets
+
+# %%
+df = dataframes['planets']
+df.sample(5)
+
+# %%
+df.dtypes
+
+# %%
+for col in ['rotation_period', 'orbital_period', 'diameter', 'surface_water', 'population']:
+    df[col] = df[col].replace('unknown', np.nan).astype('float')
+
+# %%
+df.population = df.population / 1E6
+df.rename(columns = {'population' : 'population_millions'}, inplace = True)
+
+# %%
+df.gravity.unique()
+
+# %%
+df.gravity = df.gravity.str.replace(' standard', '').str.replace(df.gravity[5], '1.5')
+df.gravity = df.gravity.replace('unknown', np.nan)
+
+# %% [markdown]
+# ### Clean species
+
+# %%
+df = dataframes['species']
+df.sample(5)
+
+# %%
+df.dtypes
+
+# %%
+df.average_height = df.average_height.replace('unknown', np.nan).replace('n/a', np.nan).astype('float')
+
+# %%
+df.average_lifespan = df.average_lifespan.replace('unknown', np.nan).replace('indefinite', 9999).astype('float')
+
+# %%
+df.loc[1, 'homeworld_id'] = np.nan
+df.homeworld_id = df.homeworld_id.astype('float')
+
+# %% [markdown]
+# ### Clean vehicles
+
+# %%
+df = dataframes['vehicles']
+df.sample(5)
+
+# %%
+df.cost_in_credits = df.cost_in_credits.replace('unknown', np.nan)
+df.cost_in_credits = df.cost_in_credits.astype('float')
+
+# %%
+for col in ['max_atmosphering_speed' ,'crew', 'passengers', 'cargo_capacity']:
+    df[col] = df[col].replace('unknown', np.nan).replace('none', np.nan)
+    df[col] = df[col].astype('float')
+
+# %%
+df.length = df.length.replace('unknown', np.nan)
+df.length = df.length.astype('float')
+
+# %%
+df.consumables = df.consumables.replace('0', 'none')
+
+# %% [markdown]
+# ### Clean starships
+
+# %%
+df = dataframes['starships']
+df.sample(5)
+
+# %%
+df.loc[0, 'crew'] = 165
+
+# %%
+for col in ['cost_in_credits', 'length', 'max_atmosphering_speed', 'crew', 'passengers', 'cargo_capacity', 'hyperdrive_rating', 'MGLT']:
+    try:
+        df[col] = df[col].replace('unknown', np.nan).replace('none', np.nan).replace('n/a', np.nan)
+        df[col] = df[col].str.replace(',', '', regex = False).str.replace('km', '')
+        #df[col] = df[col].astype('float')
+    except Exception as e:
+        print(f'Error in {col}: {e}')
+
+# %%
+for col in ['cost_in_credits', 'length', 'max_atmosphering_speed', 'crew', 'passengers', 'cargo_capacity', 'hyperdrive_rating', 'MGLT']:
+    try:
+        df[col] = df[col].astype('float')
+    except:
+        print(f'error with {col}')
+
+# %% [markdown]
+# ## Export clean datasets into csv files
+
+# %%
+data_path = './data'
+for cat in categories:
+    filename = f'{cat}_dataframe.csv'
+    if os.path.exists(f'{data_path}/csv/{filename}'):
+        print(f'File {filename} already exist!')
+        pass
+    else:
+        os.makedirs(f'{data_path}/csv/', exist_ok=True)
+        df = dataframes[cat]
+        df.to_csv(f'{data_path}/csv/{cat}_dataframe.csv', index = False)
+print(f'Dataframes of each normalized category are stored in {data_path}/csv/ as csv files!')
+
+# %% [markdown]
+# # Junction tables
+# 
+# (many-to-many relationships in the database)
+# 
+# 1. **films_people**: Links films to the characters that appeared in them.
+# 
+#     - character_id: Foreign Key referencing the `people` table.
+#     - film_id: Foreign Key referencing the films table.
+# 
+# 2. **films_planets**: Links films to the planets that appeared in them.
+# 
+#     - planet_id: Foreign Key referencing the `planets` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 3. **films_starships**: Links films to the starships that appeared in them.
+# 
+#     - starship_id: Foreign Key referencing the `starships` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 4. **films_vehicles**: Links films to the vehicles that appeared in them.
+# 
+#     - vehicle_id: Foreign Key referencing the `vehicles` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 5. **films_species**: Links films to the species that appeared in them.
+# 
+#     - species_id: Foreign Key referencing the `species` table.
+#     - film_id: Foreign Key referencing the `films` table.
+# 
+# 6. **people_starships**: Links people (pilots) to the starships they have piloted.
+# 
+#     - character_id: Foreign Key referencing the `people` table.
+#     - starship_id: Foreign Key referencing the `starships` table.
+# 
+# 7. **people_vehicles**: Links people (pilots) to the vehicles they have piloted.
+# 
+#     - character_id: Foreign Key referencing the `people` table.
+#     - vehicle_id: Foreign Key referencing the vehicles table.
+
+# %%
+junction_tables = [
+    'people_vehicles', 
+    'people_starships',
+    
+    'films_people',
+    'films_planets',
+    'films_starships',
+    'films_vehicles',
+    'films_species'
+    ]
+
+junction_tables_dict = {i:None for i in junction_tables}
+
+# %% [markdown]
+# ## Junction tables for people:
+
+# %%
+columns = ['vehicle_id', 'starship_id']
+data = dataframes['people'].loc[:, columns + ['character_id']]
+
+for col in columns:
+    table_name = f'people_{col}'.replace('_id', 's')
+    junction_tables_dict[table_name] = (data.loc[:, ['character_id', col]]
+                                        .explode(col)
+                                        .explode('character_id')
+                                        .dropna()
+                                        .reset_index(drop = True)
+                                        .sort_values('character_id')
+                                        )
+
+# %% [markdown]
+# ## Junction tables for films:
+
+# %%
+columns = ['character_id', 'species_id', 'planet_id', 'vehicle_id', 'starship_id']
+data = dataframes['films'].loc[:, columns + ['film_id']]
+
+for col in columns:
+    table_name = f'films_{col}'
+    if col == 'species_id':
+        table_name = table_name.replace('_id', '')
+    elif col == 'character_id':
+        table_name = 'films_people'
+    else:
+        table_name = table_name.replace('_id', 's')
+        
+    junction_tables_dict[table_name] = (data.loc[:, ['film_id', col ]]
+                                        .explode(col)
+                                        .reset_index(drop = True)
+                                        .sort_values('film_id')
+    )
+
+# %% [markdown]
+# # Normalization
+# Next step is to normalize the datasets in order to create the database.
+
+# %%
+dataframes_normalized = copy.deepcopy(dataframes)
+
+# %%
+columns_to_drop = {
+    'films' : ['character_id', 'planet_id', 'species_id', 'vehicle_id', 'starship_id', 'url'],
+    'people' : ['film_id', 'species_id', 'vehicle_id', 'starship_id', 'url'],
+    'planets' : ['residents_id', 'film_id', 'url'],
+    'species' : ['character_id', 'film_id', 'url'],
+    'starships' : ['pilot_id', 'film_id', 'url'],
+    'vehicles' : ['pilot_id', 'film_id', 'url'],
+}  
+
+# %% [markdown]
+# ### Drop the corresponding columns in order to normalize the tables
+
+# %%
+for cat in dataframes_normalized.keys():
+    dataframes_normalized[cat].drop(columns_to_drop[cat], axis='columns', inplace = True)
+
+# %% [markdown]
+# ## Store the normalized dataframes
+
+# %%
+data_path = './data'
+for cat in categories:
+    filename = f'{cat}_dataframe.csv'
+    if os.path.exists(f'{data_path}/csv_normalized/{filename}'):
+        print(f'File {filename} already exist!')
+        pass
+    else:
+        os.makedirs(f'{data_path}/csv_normalized/', exist_ok=True)
+        df = dataframes_normalized[cat]
+        df.to_csv(f'{data_path}/csv_normalized/{cat}_dataframe_normalized.csv', index = False)
+print(f'Dataframes of each normalized category are stored in {data_path}/csv_normalized/ as csv files!')
+
+# %% [markdown]
+# # Insert data into the database
+
+# %% [markdown]
+# ## Load database parameters from `.env` file
+
+# %%
+load_dotenv()
+
+DB_USER = os.getenv("DB_USER")
+DB_PASS = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
+
+# %% [markdown]
+# ## Create the db connection
+
+# %%
+connection_string = (
+    f'mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+)
+
+# --- 4. Create the SQLAlchemy Engine ---
+try:
+    engine = create_engine(connection_string)
+    print("SQLAlchemy Engine created successfully. 🛠️")
+except Exception as e:
+    print(f"Error creating engine: {e}")
+
+# %% [markdown]
+# ## Populate the data into the database
+# 
+# The order of tables to be filled must be:
+# 1. planets
+# 2. species
+# 3. starships
+# 4. vehicles
+# 5. films
+# 6. people
+
+# %%
+categories_sorted = ['planets', 'species', 'vehicles', 'starships', 'films', 'people']
+insert = False
+
+# %% [markdown]
+# ### Insert the category tables into the database
+
+# %%
+def insert_category(cat, dictionary):
+    df = dictionary[cat]
+    try:
+        df.to_sql(name=cat, con=engine, if_exists='append', index=False)
+        print(f"DataFrame for category '{cat}' inserted successfully into the database. ✅\n")
+    except Exception as e:
+        print(f"\\ Error inserting DataFrame for category '{cat}': \n{e}\n\n")
+
+# %%
+dataframes_normalized['planets'].head()
+
+# %%
+for cat in categories_sorted:
+    query = f'select * from {cat} limit 1 ;'
+    # if table is empty, fill it with the corresponding data
+    if pd.read_sql(query, con = engine).shape[0] == 0:
+        insert_category(cat, dataframes_normalized)
+    else:
+        print(f'{cat} table already exists in database!')
+
+# %% [markdown]
+# ### Insert junction tables
+
+# %%
+print(junction_tables_dict['people_vehicles'].head())
+
+# %%
+for table in junction_tables_dict.keys():
+    query = f'select * from {table} limit 1 ;'
+    # if table is empty, fill it with the corresponding data
+    if pd.read_sql(query, con = engine).shape[0] == 0:
+        insert_category(table, junction_tables_dict)
+    else:
+        print(f'{cat} table already exists in database!') 
+
+# %%
+
 
 
