@@ -75,6 +75,7 @@ Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
+
 The main packages are:
 - requests
 - pandas
@@ -82,8 +83,6 @@ The main packages are:
 - SQLAlchemy
 - PyMySQL
 - python-dotenv
-
-The `requirements.txt` file is located under `scripts` folder.
 
 ### 4. Setup Database
 
@@ -122,8 +121,17 @@ The script will:
 
 You will see log messages in your console indicating the progress of each step.
 
-## Project Structure
+## Testing
 
+To run the tests, make sure you have installed the development dependencies (especially `pytest` and `pytest-mock`), and then run the following command from the root directory:
+
+```bash
+pytest
+```
+
+This will discover and run all the tests in the `tests` directory.
+
+## Project Structure
 ```
 ├── data/                 # Directory for cached JSON and exported CSV files
 ├── database/
